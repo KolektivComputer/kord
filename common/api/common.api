@@ -4501,8 +4501,8 @@ public final class dev/kord/common/entity/DiscordGuildRole$Companion {
 
 public final class dev/kord/common/entity/DiscordGuildScheduledEvent {
 	public static final field Companion Ldev/kord/common/entity/DiscordGuildScheduledEvent$Companion;
-	public fun <init> (Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/optional/OptionalSnowflake;Ljava/lang/String;Ldev/kord/common/entity/optional/Optional;Lkotlin/time/Instant;Lkotlin/time/Instant;Ldev/kord/common/entity/GuildScheduledEventPrivacyLevel;Ldev/kord/common/entity/GuildScheduledEventStatus;Ldev/kord/common/entity/ScheduledEntityType;Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/GuildScheduledEventEntityMetadata;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/Optional;)V
-	public synthetic fun <init> (Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/optional/OptionalSnowflake;Ljava/lang/String;Ldev/kord/common/entity/optional/Optional;Lkotlin/time/Instant;Lkotlin/time/Instant;Ldev/kord/common/entity/GuildScheduledEventPrivacyLevel;Ldev/kord/common/entity/GuildScheduledEventStatus;Ldev/kord/common/entity/ScheduledEntityType;Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/GuildScheduledEventEntityMetadata;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/Optional;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun <init> (Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/optional/OptionalSnowflake;Ljava/lang/String;Ldev/kord/common/entity/optional/Optional;Lkotlin/time/Instant;Lkotlin/time/Instant;Ldev/kord/common/entity/GuildScheduledEventPrivacyLevel;Ldev/kord/common/entity/GuildScheduledEventStatus;Ldev/kord/common/entity/ScheduledEntityType;Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/GuildScheduledEventEntityMetadata;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/DiscordRecurrenceRule;)V
+	public synthetic fun <init> (Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/optional/OptionalSnowflake;Ljava/lang/String;Ldev/kord/common/entity/optional/Optional;Lkotlin/time/Instant;Lkotlin/time/Instant;Ldev/kord/common/entity/GuildScheduledEventPrivacyLevel;Ldev/kord/common/entity/GuildScheduledEventStatus;Ldev/kord/common/entity/ScheduledEntityType;Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/GuildScheduledEventEntityMetadata;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/DiscordRecurrenceRule;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ldev/kord/common/entity/Snowflake;
 	public final fun component10 ()Ldev/kord/common/entity/GuildScheduledEventStatus;
 	public final fun component11 ()Ldev/kord/common/entity/ScheduledEntityType;
@@ -4511,6 +4511,7 @@ public final class dev/kord/common/entity/DiscordGuildScheduledEvent {
 	public final fun component14 ()Ldev/kord/common/entity/optional/Optional;
 	public final fun component15 ()Ldev/kord/common/entity/optional/OptionalInt;
 	public final fun component16 ()Ldev/kord/common/entity/optional/Optional;
+	public final fun component17 ()Ldev/kord/common/entity/DiscordRecurrenceRule;
 	public final fun component2 ()Ldev/kord/common/entity/Snowflake;
 	public final fun component3 ()Ldev/kord/common/entity/Snowflake;
 	public final fun component4 ()Ldev/kord/common/entity/optional/OptionalSnowflake;
@@ -4519,8 +4520,8 @@ public final class dev/kord/common/entity/DiscordGuildScheduledEvent {
 	public final fun component7 ()Lkotlin/time/Instant;
 	public final fun component8 ()Lkotlin/time/Instant;
 	public final fun component9 ()Ldev/kord/common/entity/GuildScheduledEventPrivacyLevel;
-	public final fun copy (Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/optional/OptionalSnowflake;Ljava/lang/String;Ldev/kord/common/entity/optional/Optional;Lkotlin/time/Instant;Lkotlin/time/Instant;Ldev/kord/common/entity/GuildScheduledEventPrivacyLevel;Ldev/kord/common/entity/GuildScheduledEventStatus;Ldev/kord/common/entity/ScheduledEntityType;Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/GuildScheduledEventEntityMetadata;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/Optional;)Ldev/kord/common/entity/DiscordGuildScheduledEvent;
-	public static synthetic fun copy$default (Ldev/kord/common/entity/DiscordGuildScheduledEvent;Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/optional/OptionalSnowflake;Ljava/lang/String;Ldev/kord/common/entity/optional/Optional;Lkotlin/time/Instant;Lkotlin/time/Instant;Ldev/kord/common/entity/GuildScheduledEventPrivacyLevel;Ldev/kord/common/entity/GuildScheduledEventStatus;Ldev/kord/common/entity/ScheduledEntityType;Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/GuildScheduledEventEntityMetadata;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/Optional;ILjava/lang/Object;)Ldev/kord/common/entity/DiscordGuildScheduledEvent;
+	public final fun copy (Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/optional/OptionalSnowflake;Ljava/lang/String;Ldev/kord/common/entity/optional/Optional;Lkotlin/time/Instant;Lkotlin/time/Instant;Ldev/kord/common/entity/GuildScheduledEventPrivacyLevel;Ldev/kord/common/entity/GuildScheduledEventStatus;Ldev/kord/common/entity/ScheduledEntityType;Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/GuildScheduledEventEntityMetadata;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/DiscordRecurrenceRule;)Ldev/kord/common/entity/DiscordGuildScheduledEvent;
+	public static synthetic fun copy$default (Ldev/kord/common/entity/DiscordGuildScheduledEvent;Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/optional/OptionalSnowflake;Ljava/lang/String;Ldev/kord/common/entity/optional/Optional;Lkotlin/time/Instant;Lkotlin/time/Instant;Ldev/kord/common/entity/GuildScheduledEventPrivacyLevel;Ldev/kord/common/entity/GuildScheduledEventStatus;Ldev/kord/common/entity/ScheduledEntityType;Ldev/kord/common/entity/Snowflake;Ldev/kord/common/entity/GuildScheduledEventEntityMetadata;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/optional/OptionalInt;Ldev/kord/common/entity/optional/Optional;Ldev/kord/common/entity/DiscordRecurrenceRule;ILjava/lang/Object;)Ldev/kord/common/entity/DiscordGuildScheduledEvent;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getChannelId ()Ldev/kord/common/entity/Snowflake;
 	public final fun getCreator ()Ldev/kord/common/entity/optional/Optional;
@@ -4534,6 +4535,7 @@ public final class dev/kord/common/entity/DiscordGuildScheduledEvent {
 	public final fun getImage ()Ldev/kord/common/entity/optional/Optional;
 	public final fun getName ()Ljava/lang/String;
 	public final fun getPrivacyLevel ()Ldev/kord/common/entity/GuildScheduledEventPrivacyLevel;
+	public final fun getRecurrenceRule ()Ldev/kord/common/entity/DiscordRecurrenceRule;
 	public final fun getScheduledEndTime ()Lkotlin/time/Instant;
 	public final fun getScheduledStartTime ()Lkotlin/time/Instant;
 	public final fun getStatus ()Ldev/kord/common/entity/GuildScheduledEventStatus;
@@ -6106,6 +6108,81 @@ public final synthetic class dev/kord/common/entity/DiscordPrimaryGuild$$seriali
 }
 
 public final class dev/kord/common/entity/DiscordPrimaryGuild$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/kord/common/entity/DiscordRecurrenceRule {
+	public static final field Companion Ldev/kord/common/entity/DiscordRecurrenceRule$Companion;
+	public fun <init> (Lkotlin/time/Instant;Lkotlin/time/Instant;Ldev/kord/common/entity/RecurrenceRuleFrequency;Ljava/lang/Integer;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/lang/Integer;)V
+	public synthetic fun <init> (Lkotlin/time/Instant;Lkotlin/time/Instant;Ldev/kord/common/entity/RecurrenceRuleFrequency;Ljava/lang/Integer;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/lang/Integer;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Lkotlin/time/Instant;
+	public final fun component10 ()Ljava/lang/Integer;
+	public final fun component2 ()Lkotlin/time/Instant;
+	public final fun component3 ()Ldev/kord/common/entity/RecurrenceRuleFrequency;
+	public final fun component4 ()Ljava/lang/Integer;
+	public final fun component5 ()Ljava/util/List;
+	public final fun component6 ()Ljava/util/List;
+	public final fun component7 ()Ljava/util/List;
+	public final fun component8 ()Ljava/util/List;
+	public final fun component9 ()Ljava/util/List;
+	public final fun copy (Lkotlin/time/Instant;Lkotlin/time/Instant;Ldev/kord/common/entity/RecurrenceRuleFrequency;Ljava/lang/Integer;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/lang/Integer;)Ldev/kord/common/entity/DiscordRecurrenceRule;
+	public static synthetic fun copy$default (Ldev/kord/common/entity/DiscordRecurrenceRule;Lkotlin/time/Instant;Lkotlin/time/Instant;Ldev/kord/common/entity/RecurrenceRuleFrequency;Ljava/lang/Integer;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/lang/Integer;ILjava/lang/Object;)Ldev/kord/common/entity/DiscordRecurrenceRule;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getByMonth ()Ljava/util/List;
+	public final fun getByMonthDay ()Ljava/util/List;
+	public final fun getByNWeekday ()Ljava/util/List;
+	public final fun getByWeekday ()Ljava/util/List;
+	public final fun getByYearDay ()Ljava/util/List;
+	public final fun getCount ()Ljava/lang/Integer;
+	public final fun getEnd ()Lkotlin/time/Instant;
+	public final fun getFrequency ()Ldev/kord/common/entity/RecurrenceRuleFrequency;
+	public final fun getInterval ()Ljava/lang/Integer;
+	public final fun getStart ()Lkotlin/time/Instant;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/kord/common/entity/DiscordRecurrenceRule$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/kord/common/entity/DiscordRecurrenceRule$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/kord/common/entity/DiscordRecurrenceRule;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/kord/common/entity/DiscordRecurrenceRule;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/kord/common/entity/DiscordRecurrenceRule$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/kord/common/entity/DiscordRecurrenceRuleNWeekday {
+	public static final field Companion Ldev/kord/common/entity/DiscordRecurrenceRuleNWeekday$Companion;
+	public fun <init> (II)V
+	public final fun component1 ()I
+	public final fun component2 ()I
+	public final fun copy (II)Ldev/kord/common/entity/DiscordRecurrenceRuleNWeekday;
+	public static synthetic fun copy$default (Ldev/kord/common/entity/DiscordRecurrenceRuleNWeekday;IIILjava/lang/Object;)Ldev/kord/common/entity/DiscordRecurrenceRuleNWeekday;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getDay ()I
+	public final fun getN ()I
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/kord/common/entity/DiscordRecurrenceRuleNWeekday$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/kord/common/entity/DiscordRecurrenceRuleNWeekday$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/kord/common/entity/DiscordRecurrenceRuleNWeekday;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/kord/common/entity/DiscordRecurrenceRuleNWeekday;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/kord/common/entity/DiscordRecurrenceRuleNWeekday$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
@@ -9428,6 +9505,152 @@ public final synthetic class dev/kord/common/entity/Reaction$$serializer : kotli
 
 public final class dev/kord/common/entity/Reaction$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public abstract class dev/kord/common/entity/RecurrenceRuleFrequency {
+	public static final field Companion Ldev/kord/common/entity/RecurrenceRuleFrequency$Companion;
+	public synthetic fun <init> (ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun equals (Ljava/lang/Object;)Z
+	public final fun getValue ()I
+	public final fun hashCode ()I
+	public final fun toString ()Ljava/lang/String;
+}
+
+public final class dev/kord/common/entity/RecurrenceRuleFrequency$Companion {
+	public final fun from (I)Ldev/kord/common/entity/RecurrenceRuleFrequency;
+	public final fun getEntries ()Ljava/util/List;
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/kord/common/entity/RecurrenceRuleFrequency$Daily : dev/kord/common/entity/RecurrenceRuleFrequency {
+	public static final field INSTANCE Ldev/kord/common/entity/RecurrenceRuleFrequency$Daily;
+}
+
+public final class dev/kord/common/entity/RecurrenceRuleFrequency$Monthly : dev/kord/common/entity/RecurrenceRuleFrequency {
+	public static final field INSTANCE Ldev/kord/common/entity/RecurrenceRuleFrequency$Monthly;
+}
+
+public final class dev/kord/common/entity/RecurrenceRuleFrequency$Unknown : dev/kord/common/entity/RecurrenceRuleFrequency {
+}
+
+public final class dev/kord/common/entity/RecurrenceRuleFrequency$Weekly : dev/kord/common/entity/RecurrenceRuleFrequency {
+	public static final field INSTANCE Ldev/kord/common/entity/RecurrenceRuleFrequency$Weekly;
+}
+
+public final class dev/kord/common/entity/RecurrenceRuleFrequency$Yearly : dev/kord/common/entity/RecurrenceRuleFrequency {
+	public static final field INSTANCE Ldev/kord/common/entity/RecurrenceRuleFrequency$Yearly;
+}
+
+public abstract class dev/kord/common/entity/RecurrenceRuleMonth {
+	public static final field Companion Ldev/kord/common/entity/RecurrenceRuleMonth$Companion;
+	public synthetic fun <init> (ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun equals (Ljava/lang/Object;)Z
+	public final fun getValue ()I
+	public final fun hashCode ()I
+	public final fun toString ()Ljava/lang/String;
+}
+
+public final class dev/kord/common/entity/RecurrenceRuleMonth$April : dev/kord/common/entity/RecurrenceRuleMonth {
+	public static final field INSTANCE Ldev/kord/common/entity/RecurrenceRuleMonth$April;
+}
+
+public final class dev/kord/common/entity/RecurrenceRuleMonth$August : dev/kord/common/entity/RecurrenceRuleMonth {
+	public static final field INSTANCE Ldev/kord/common/entity/RecurrenceRuleMonth$August;
+}
+
+public final class dev/kord/common/entity/RecurrenceRuleMonth$Companion {
+	public final fun from (I)Ldev/kord/common/entity/RecurrenceRuleMonth;
+	public final fun getEntries ()Ljava/util/List;
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/kord/common/entity/RecurrenceRuleMonth$December : dev/kord/common/entity/RecurrenceRuleMonth {
+	public static final field INSTANCE Ldev/kord/common/entity/RecurrenceRuleMonth$December;
+}
+
+public final class dev/kord/common/entity/RecurrenceRuleMonth$February : dev/kord/common/entity/RecurrenceRuleMonth {
+	public static final field INSTANCE Ldev/kord/common/entity/RecurrenceRuleMonth$February;
+}
+
+public final class dev/kord/common/entity/RecurrenceRuleMonth$January : dev/kord/common/entity/RecurrenceRuleMonth {
+	public static final field INSTANCE Ldev/kord/common/entity/RecurrenceRuleMonth$January;
+}
+
+public final class dev/kord/common/entity/RecurrenceRuleMonth$July : dev/kord/common/entity/RecurrenceRuleMonth {
+	public static final field INSTANCE Ldev/kord/common/entity/RecurrenceRuleMonth$July;
+}
+
+public final class dev/kord/common/entity/RecurrenceRuleMonth$June : dev/kord/common/entity/RecurrenceRuleMonth {
+	public static final field INSTANCE Ldev/kord/common/entity/RecurrenceRuleMonth$June;
+}
+
+public final class dev/kord/common/entity/RecurrenceRuleMonth$March : dev/kord/common/entity/RecurrenceRuleMonth {
+	public static final field INSTANCE Ldev/kord/common/entity/RecurrenceRuleMonth$March;
+}
+
+public final class dev/kord/common/entity/RecurrenceRuleMonth$May : dev/kord/common/entity/RecurrenceRuleMonth {
+	public static final field INSTANCE Ldev/kord/common/entity/RecurrenceRuleMonth$May;
+}
+
+public final class dev/kord/common/entity/RecurrenceRuleMonth$November : dev/kord/common/entity/RecurrenceRuleMonth {
+	public static final field INSTANCE Ldev/kord/common/entity/RecurrenceRuleMonth$November;
+}
+
+public final class dev/kord/common/entity/RecurrenceRuleMonth$October : dev/kord/common/entity/RecurrenceRuleMonth {
+	public static final field INSTANCE Ldev/kord/common/entity/RecurrenceRuleMonth$October;
+}
+
+public final class dev/kord/common/entity/RecurrenceRuleMonth$September : dev/kord/common/entity/RecurrenceRuleMonth {
+	public static final field INSTANCE Ldev/kord/common/entity/RecurrenceRuleMonth$September;
+}
+
+public final class dev/kord/common/entity/RecurrenceRuleMonth$Unknown : dev/kord/common/entity/RecurrenceRuleMonth {
+}
+
+public abstract class dev/kord/common/entity/RecurrenceRuleWeekday {
+	public static final field Companion Ldev/kord/common/entity/RecurrenceRuleWeekday$Companion;
+	public synthetic fun <init> (ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun equals (Ljava/lang/Object;)Z
+	public final fun getValue ()I
+	public final fun hashCode ()I
+	public final fun toString ()Ljava/lang/String;
+}
+
+public final class dev/kord/common/entity/RecurrenceRuleWeekday$Companion {
+	public final fun from (I)Ldev/kord/common/entity/RecurrenceRuleWeekday;
+	public final fun getEntries ()Ljava/util/List;
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/kord/common/entity/RecurrenceRuleWeekday$Friday : dev/kord/common/entity/RecurrenceRuleWeekday {
+	public static final field INSTANCE Ldev/kord/common/entity/RecurrenceRuleWeekday$Friday;
+}
+
+public final class dev/kord/common/entity/RecurrenceRuleWeekday$Monday : dev/kord/common/entity/RecurrenceRuleWeekday {
+	public static final field INSTANCE Ldev/kord/common/entity/RecurrenceRuleWeekday$Monday;
+}
+
+public final class dev/kord/common/entity/RecurrenceRuleWeekday$Saturday : dev/kord/common/entity/RecurrenceRuleWeekday {
+	public static final field INSTANCE Ldev/kord/common/entity/RecurrenceRuleWeekday$Saturday;
+}
+
+public final class dev/kord/common/entity/RecurrenceRuleWeekday$Sunday : dev/kord/common/entity/RecurrenceRuleWeekday {
+	public static final field INSTANCE Ldev/kord/common/entity/RecurrenceRuleWeekday$Sunday;
+}
+
+public final class dev/kord/common/entity/RecurrenceRuleWeekday$Thursday : dev/kord/common/entity/RecurrenceRuleWeekday {
+	public static final field INSTANCE Ldev/kord/common/entity/RecurrenceRuleWeekday$Thursday;
+}
+
+public final class dev/kord/common/entity/RecurrenceRuleWeekday$Tuesday : dev/kord/common/entity/RecurrenceRuleWeekday {
+	public static final field INSTANCE Ldev/kord/common/entity/RecurrenceRuleWeekday$Tuesday;
+}
+
+public final class dev/kord/common/entity/RecurrenceRuleWeekday$Unknown : dev/kord/common/entity/RecurrenceRuleWeekday {
+}
+
+public final class dev/kord/common/entity/RecurrenceRuleWeekday$Wednesday : dev/kord/common/entity/RecurrenceRuleWeekday {
+	public static final field INSTANCE Ldev/kord/common/entity/RecurrenceRuleWeekday$Wednesday;
 }
 
 public final class dev/kord/common/entity/ResolvedObjects {

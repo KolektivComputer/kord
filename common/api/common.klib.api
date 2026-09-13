@@ -3161,7 +3161,7 @@ final class dev.kord.common.entity/DiscordGuildRole { // dev.kord.common.entity/
 }
 
 final class dev.kord.common.entity/DiscordGuildScheduledEvent { // dev.kord.common.entity/DiscordGuildScheduledEvent|null[0]
-    constructor <init>(dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake?, dev.kord.common.entity.optional/OptionalSnowflake? = ..., kotlin/String, dev.kord.common.entity.optional/Optional<kotlin/String?> = ..., kotlin.time/Instant, kotlin.time/Instant?, dev.kord.common.entity/GuildScheduledEventPrivacyLevel, dev.kord.common.entity/GuildScheduledEventStatus, dev.kord.common.entity/ScheduledEntityType, dev.kord.common.entity/Snowflake?, dev.kord.common.entity/GuildScheduledEventEntityMetadata?, dev.kord.common.entity.optional/Optional<dev.kord.common.entity/DiscordUser> = ..., dev.kord.common.entity.optional/OptionalInt = ..., dev.kord.common.entity.optional/Optional<kotlin/String?> = ...) // dev.kord.common.entity/DiscordGuildScheduledEvent.<init>|<init>(dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake?;dev.kord.common.entity.optional.OptionalSnowflake?;kotlin.String;dev.kord.common.entity.optional.Optional<kotlin.String?>;kotlin.time.Instant;kotlin.time.Instant?;dev.kord.common.entity.GuildScheduledEventPrivacyLevel;dev.kord.common.entity.GuildScheduledEventStatus;dev.kord.common.entity.ScheduledEntityType;dev.kord.common.entity.Snowflake?;dev.kord.common.entity.GuildScheduledEventEntityMetadata?;dev.kord.common.entity.optional.Optional<dev.kord.common.entity.DiscordUser>;dev.kord.common.entity.optional.OptionalInt;dev.kord.common.entity.optional.Optional<kotlin.String?>){}[0]
+    constructor <init>(dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake?, dev.kord.common.entity.optional/OptionalSnowflake? = ..., kotlin/String, dev.kord.common.entity.optional/Optional<kotlin/String?> = ..., kotlin.time/Instant, kotlin.time/Instant?, dev.kord.common.entity/GuildScheduledEventPrivacyLevel, dev.kord.common.entity/GuildScheduledEventStatus, dev.kord.common.entity/ScheduledEntityType, dev.kord.common.entity/Snowflake?, dev.kord.common.entity/GuildScheduledEventEntityMetadata?, dev.kord.common.entity.optional/Optional<dev.kord.common.entity/DiscordUser> = ..., dev.kord.common.entity.optional/OptionalInt = ..., dev.kord.common.entity.optional/Optional<kotlin/String?> = ..., dev.kord.common.entity/DiscordRecurrenceRule? = ...) // dev.kord.common.entity/DiscordGuildScheduledEvent.<init>|<init>(dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake?;dev.kord.common.entity.optional.OptionalSnowflake?;kotlin.String;dev.kord.common.entity.optional.Optional<kotlin.String?>;kotlin.time.Instant;kotlin.time.Instant?;dev.kord.common.entity.GuildScheduledEventPrivacyLevel;dev.kord.common.entity.GuildScheduledEventStatus;dev.kord.common.entity.ScheduledEntityType;dev.kord.common.entity.Snowflake?;dev.kord.common.entity.GuildScheduledEventEntityMetadata?;dev.kord.common.entity.optional.Optional<dev.kord.common.entity.DiscordUser>;dev.kord.common.entity.optional.OptionalInt;dev.kord.common.entity.optional.Optional<kotlin.String?>;dev.kord.common.entity.DiscordRecurrenceRule?){}[0]
 
     final val channelId // dev.kord.common.entity/DiscordGuildScheduledEvent.channelId|{}channelId[0]
         final fun <get-channelId>(): dev.kord.common.entity/Snowflake? // dev.kord.common.entity/DiscordGuildScheduledEvent.channelId.<get-channelId>|<get-channelId>(){}[0]
@@ -3187,6 +3187,8 @@ final class dev.kord.common.entity/DiscordGuildScheduledEvent { // dev.kord.comm
         final fun <get-name>(): kotlin/String // dev.kord.common.entity/DiscordGuildScheduledEvent.name.<get-name>|<get-name>(){}[0]
     final val privacyLevel // dev.kord.common.entity/DiscordGuildScheduledEvent.privacyLevel|{}privacyLevel[0]
         final fun <get-privacyLevel>(): dev.kord.common.entity/GuildScheduledEventPrivacyLevel // dev.kord.common.entity/DiscordGuildScheduledEvent.privacyLevel.<get-privacyLevel>|<get-privacyLevel>(){}[0]
+    final val recurrenceRule // dev.kord.common.entity/DiscordGuildScheduledEvent.recurrenceRule|{}recurrenceRule[0]
+        final fun <get-recurrenceRule>(): dev.kord.common.entity/DiscordRecurrenceRule? // dev.kord.common.entity/DiscordGuildScheduledEvent.recurrenceRule.<get-recurrenceRule>|<get-recurrenceRule>(){}[0]
     final val scheduledEndTime // dev.kord.common.entity/DiscordGuildScheduledEvent.scheduledEndTime|{}scheduledEndTime[0]
         final fun <get-scheduledEndTime>(): kotlin.time/Instant? // dev.kord.common.entity/DiscordGuildScheduledEvent.scheduledEndTime.<get-scheduledEndTime>|<get-scheduledEndTime>(){}[0]
     final val scheduledStartTime // dev.kord.common.entity/DiscordGuildScheduledEvent.scheduledStartTime|{}scheduledStartTime[0]
@@ -3204,6 +3206,7 @@ final class dev.kord.common.entity/DiscordGuildScheduledEvent { // dev.kord.comm
     final fun component14(): dev.kord.common.entity.optional/Optional<dev.kord.common.entity/DiscordUser> // dev.kord.common.entity/DiscordGuildScheduledEvent.component14|component14(){}[0]
     final fun component15(): dev.kord.common.entity.optional/OptionalInt // dev.kord.common.entity/DiscordGuildScheduledEvent.component15|component15(){}[0]
     final fun component16(): dev.kord.common.entity.optional/Optional<kotlin/String?> // dev.kord.common.entity/DiscordGuildScheduledEvent.component16|component16(){}[0]
+    final fun component17(): dev.kord.common.entity/DiscordRecurrenceRule? // dev.kord.common.entity/DiscordGuildScheduledEvent.component17|component17(){}[0]
     final fun component2(): dev.kord.common.entity/Snowflake // dev.kord.common.entity/DiscordGuildScheduledEvent.component2|component2(){}[0]
     final fun component3(): dev.kord.common.entity/Snowflake? // dev.kord.common.entity/DiscordGuildScheduledEvent.component3|component3(){}[0]
     final fun component4(): dev.kord.common.entity.optional/OptionalSnowflake? // dev.kord.common.entity/DiscordGuildScheduledEvent.component4|component4(){}[0]
@@ -3212,7 +3215,7 @@ final class dev.kord.common.entity/DiscordGuildScheduledEvent { // dev.kord.comm
     final fun component7(): kotlin.time/Instant // dev.kord.common.entity/DiscordGuildScheduledEvent.component7|component7(){}[0]
     final fun component8(): kotlin.time/Instant? // dev.kord.common.entity/DiscordGuildScheduledEvent.component8|component8(){}[0]
     final fun component9(): dev.kord.common.entity/GuildScheduledEventPrivacyLevel // dev.kord.common.entity/DiscordGuildScheduledEvent.component9|component9(){}[0]
-    final fun copy(dev.kord.common.entity/Snowflake = ..., dev.kord.common.entity/Snowflake = ..., dev.kord.common.entity/Snowflake? = ..., dev.kord.common.entity.optional/OptionalSnowflake? = ..., kotlin/String = ..., dev.kord.common.entity.optional/Optional<kotlin/String?> = ..., kotlin.time/Instant = ..., kotlin.time/Instant? = ..., dev.kord.common.entity/GuildScheduledEventPrivacyLevel = ..., dev.kord.common.entity/GuildScheduledEventStatus = ..., dev.kord.common.entity/ScheduledEntityType = ..., dev.kord.common.entity/Snowflake? = ..., dev.kord.common.entity/GuildScheduledEventEntityMetadata? = ..., dev.kord.common.entity.optional/Optional<dev.kord.common.entity/DiscordUser> = ..., dev.kord.common.entity.optional/OptionalInt = ..., dev.kord.common.entity.optional/Optional<kotlin/String?> = ...): dev.kord.common.entity/DiscordGuildScheduledEvent // dev.kord.common.entity/DiscordGuildScheduledEvent.copy|copy(dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake?;dev.kord.common.entity.optional.OptionalSnowflake?;kotlin.String;dev.kord.common.entity.optional.Optional<kotlin.String?>;kotlin.time.Instant;kotlin.time.Instant?;dev.kord.common.entity.GuildScheduledEventPrivacyLevel;dev.kord.common.entity.GuildScheduledEventStatus;dev.kord.common.entity.ScheduledEntityType;dev.kord.common.entity.Snowflake?;dev.kord.common.entity.GuildScheduledEventEntityMetadata?;dev.kord.common.entity.optional.Optional<dev.kord.common.entity.DiscordUser>;dev.kord.common.entity.optional.OptionalInt;dev.kord.common.entity.optional.Optional<kotlin.String?>){}[0]
+    final fun copy(dev.kord.common.entity/Snowflake = ..., dev.kord.common.entity/Snowflake = ..., dev.kord.common.entity/Snowflake? = ..., dev.kord.common.entity.optional/OptionalSnowflake? = ..., kotlin/String = ..., dev.kord.common.entity.optional/Optional<kotlin/String?> = ..., kotlin.time/Instant = ..., kotlin.time/Instant? = ..., dev.kord.common.entity/GuildScheduledEventPrivacyLevel = ..., dev.kord.common.entity/GuildScheduledEventStatus = ..., dev.kord.common.entity/ScheduledEntityType = ..., dev.kord.common.entity/Snowflake? = ..., dev.kord.common.entity/GuildScheduledEventEntityMetadata? = ..., dev.kord.common.entity.optional/Optional<dev.kord.common.entity/DiscordUser> = ..., dev.kord.common.entity.optional/OptionalInt = ..., dev.kord.common.entity.optional/Optional<kotlin/String?> = ..., dev.kord.common.entity/DiscordRecurrenceRule? = ...): dev.kord.common.entity/DiscordGuildScheduledEvent // dev.kord.common.entity/DiscordGuildScheduledEvent.copy|copy(dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake?;dev.kord.common.entity.optional.OptionalSnowflake?;kotlin.String;dev.kord.common.entity.optional.Optional<kotlin.String?>;kotlin.time.Instant;kotlin.time.Instant?;dev.kord.common.entity.GuildScheduledEventPrivacyLevel;dev.kord.common.entity.GuildScheduledEventStatus;dev.kord.common.entity.ScheduledEntityType;dev.kord.common.entity.Snowflake?;dev.kord.common.entity.GuildScheduledEventEntityMetadata?;dev.kord.common.entity.optional.Optional<dev.kord.common.entity.DiscordUser>;dev.kord.common.entity.optional.OptionalInt;dev.kord.common.entity.optional.Optional<kotlin.String?>;dev.kord.common.entity.DiscordRecurrenceRule?){}[0]
     final fun equals(kotlin/Any?): kotlin/Boolean // dev.kord.common.entity/DiscordGuildScheduledEvent.equals|equals(kotlin.Any?){}[0]
     final fun hashCode(): kotlin/Int // dev.kord.common.entity/DiscordGuildScheduledEvent.hashCode|hashCode(){}[0]
     final fun toString(): kotlin/String // dev.kord.common.entity/DiscordGuildScheduledEvent.toString|toString(){}[0]
@@ -5056,6 +5059,90 @@ final class dev.kord.common.entity/DiscordPrimaryGuild { // dev.kord.common.enti
 
     final object Companion { // dev.kord.common.entity/DiscordPrimaryGuild.Companion|null[0]
         final fun serializer(): kotlinx.serialization/KSerializer<dev.kord.common.entity/DiscordPrimaryGuild> // dev.kord.common.entity/DiscordPrimaryGuild.Companion.serializer|serializer(){}[0]
+    }
+}
+
+final class dev.kord.common.entity/DiscordRecurrenceRule { // dev.kord.common.entity/DiscordRecurrenceRule|null[0]
+    constructor <init>(kotlin.time/Instant? = ..., kotlin.time/Instant? = ..., dev.kord.common.entity/RecurrenceRuleFrequency, kotlin/Int? = ..., kotlin.collections/List<dev.kord.common.entity/RecurrenceRuleWeekday>? = ..., kotlin.collections/List<dev.kord.common.entity/DiscordRecurrenceRuleNWeekday>? = ..., kotlin.collections/List<dev.kord.common.entity/RecurrenceRuleMonth>? = ..., kotlin.collections/List<kotlin/Int>? = ..., kotlin.collections/List<kotlin/Int>? = ..., kotlin/Int? = ...) // dev.kord.common.entity/DiscordRecurrenceRule.<init>|<init>(kotlin.time.Instant?;kotlin.time.Instant?;dev.kord.common.entity.RecurrenceRuleFrequency;kotlin.Int?;kotlin.collections.List<dev.kord.common.entity.RecurrenceRuleWeekday>?;kotlin.collections.List<dev.kord.common.entity.DiscordRecurrenceRuleNWeekday>?;kotlin.collections.List<dev.kord.common.entity.RecurrenceRuleMonth>?;kotlin.collections.List<kotlin.Int>?;kotlin.collections.List<kotlin.Int>?;kotlin.Int?){}[0]
+
+    final val byMonth // dev.kord.common.entity/DiscordRecurrenceRule.byMonth|{}byMonth[0]
+        final fun <get-byMonth>(): kotlin.collections/List<dev.kord.common.entity/RecurrenceRuleMonth>? // dev.kord.common.entity/DiscordRecurrenceRule.byMonth.<get-byMonth>|<get-byMonth>(){}[0]
+    final val byMonthDay // dev.kord.common.entity/DiscordRecurrenceRule.byMonthDay|{}byMonthDay[0]
+        final fun <get-byMonthDay>(): kotlin.collections/List<kotlin/Int>? // dev.kord.common.entity/DiscordRecurrenceRule.byMonthDay.<get-byMonthDay>|<get-byMonthDay>(){}[0]
+    final val byNWeekday // dev.kord.common.entity/DiscordRecurrenceRule.byNWeekday|{}byNWeekday[0]
+        final fun <get-byNWeekday>(): kotlin.collections/List<dev.kord.common.entity/DiscordRecurrenceRuleNWeekday>? // dev.kord.common.entity/DiscordRecurrenceRule.byNWeekday.<get-byNWeekday>|<get-byNWeekday>(){}[0]
+    final val byWeekday // dev.kord.common.entity/DiscordRecurrenceRule.byWeekday|{}byWeekday[0]
+        final fun <get-byWeekday>(): kotlin.collections/List<dev.kord.common.entity/RecurrenceRuleWeekday>? // dev.kord.common.entity/DiscordRecurrenceRule.byWeekday.<get-byWeekday>|<get-byWeekday>(){}[0]
+    final val byYearDay // dev.kord.common.entity/DiscordRecurrenceRule.byYearDay|{}byYearDay[0]
+        final fun <get-byYearDay>(): kotlin.collections/List<kotlin/Int>? // dev.kord.common.entity/DiscordRecurrenceRule.byYearDay.<get-byYearDay>|<get-byYearDay>(){}[0]
+    final val count // dev.kord.common.entity/DiscordRecurrenceRule.count|{}count[0]
+        final fun <get-count>(): kotlin/Int? // dev.kord.common.entity/DiscordRecurrenceRule.count.<get-count>|<get-count>(){}[0]
+    final val end // dev.kord.common.entity/DiscordRecurrenceRule.end|{}end[0]
+        final fun <get-end>(): kotlin.time/Instant? // dev.kord.common.entity/DiscordRecurrenceRule.end.<get-end>|<get-end>(){}[0]
+    final val frequency // dev.kord.common.entity/DiscordRecurrenceRule.frequency|{}frequency[0]
+        final fun <get-frequency>(): dev.kord.common.entity/RecurrenceRuleFrequency // dev.kord.common.entity/DiscordRecurrenceRule.frequency.<get-frequency>|<get-frequency>(){}[0]
+    final val interval // dev.kord.common.entity/DiscordRecurrenceRule.interval|{}interval[0]
+        final fun <get-interval>(): kotlin/Int? // dev.kord.common.entity/DiscordRecurrenceRule.interval.<get-interval>|<get-interval>(){}[0]
+    final val start // dev.kord.common.entity/DiscordRecurrenceRule.start|{}start[0]
+        final fun <get-start>(): kotlin.time/Instant? // dev.kord.common.entity/DiscordRecurrenceRule.start.<get-start>|<get-start>(){}[0]
+
+    final fun component1(): kotlin.time/Instant? // dev.kord.common.entity/DiscordRecurrenceRule.component1|component1(){}[0]
+    final fun component10(): kotlin/Int? // dev.kord.common.entity/DiscordRecurrenceRule.component10|component10(){}[0]
+    final fun component2(): kotlin.time/Instant? // dev.kord.common.entity/DiscordRecurrenceRule.component2|component2(){}[0]
+    final fun component3(): dev.kord.common.entity/RecurrenceRuleFrequency // dev.kord.common.entity/DiscordRecurrenceRule.component3|component3(){}[0]
+    final fun component4(): kotlin/Int? // dev.kord.common.entity/DiscordRecurrenceRule.component4|component4(){}[0]
+    final fun component5(): kotlin.collections/List<dev.kord.common.entity/RecurrenceRuleWeekday>? // dev.kord.common.entity/DiscordRecurrenceRule.component5|component5(){}[0]
+    final fun component6(): kotlin.collections/List<dev.kord.common.entity/DiscordRecurrenceRuleNWeekday>? // dev.kord.common.entity/DiscordRecurrenceRule.component6|component6(){}[0]
+    final fun component7(): kotlin.collections/List<dev.kord.common.entity/RecurrenceRuleMonth>? // dev.kord.common.entity/DiscordRecurrenceRule.component7|component7(){}[0]
+    final fun component8(): kotlin.collections/List<kotlin/Int>? // dev.kord.common.entity/DiscordRecurrenceRule.component8|component8(){}[0]
+    final fun component9(): kotlin.collections/List<kotlin/Int>? // dev.kord.common.entity/DiscordRecurrenceRule.component9|component9(){}[0]
+    final fun copy(kotlin.time/Instant? = ..., kotlin.time/Instant? = ..., dev.kord.common.entity/RecurrenceRuleFrequency = ..., kotlin/Int? = ..., kotlin.collections/List<dev.kord.common.entity/RecurrenceRuleWeekday>? = ..., kotlin.collections/List<dev.kord.common.entity/DiscordRecurrenceRuleNWeekday>? = ..., kotlin.collections/List<dev.kord.common.entity/RecurrenceRuleMonth>? = ..., kotlin.collections/List<kotlin/Int>? = ..., kotlin.collections/List<kotlin/Int>? = ..., kotlin/Int? = ...): dev.kord.common.entity/DiscordRecurrenceRule // dev.kord.common.entity/DiscordRecurrenceRule.copy|copy(kotlin.time.Instant?;kotlin.time.Instant?;dev.kord.common.entity.RecurrenceRuleFrequency;kotlin.Int?;kotlin.collections.List<dev.kord.common.entity.RecurrenceRuleWeekday>?;kotlin.collections.List<dev.kord.common.entity.DiscordRecurrenceRuleNWeekday>?;kotlin.collections.List<dev.kord.common.entity.RecurrenceRuleMonth>?;kotlin.collections.List<kotlin.Int>?;kotlin.collections.List<kotlin.Int>?;kotlin.Int?){}[0]
+    final fun equals(kotlin/Any?): kotlin/Boolean // dev.kord.common.entity/DiscordRecurrenceRule.equals|equals(kotlin.Any?){}[0]
+    final fun hashCode(): kotlin/Int // dev.kord.common.entity/DiscordRecurrenceRule.hashCode|hashCode(){}[0]
+    final fun toString(): kotlin/String // dev.kord.common.entity/DiscordRecurrenceRule.toString|toString(){}[0]
+
+    final object $serializer : kotlinx.serialization.internal/GeneratedSerializer<dev.kord.common.entity/DiscordRecurrenceRule> { // dev.kord.common.entity/DiscordRecurrenceRule.$serializer|null[0]
+        final val descriptor // dev.kord.common.entity/DiscordRecurrenceRule.$serializer.descriptor|{}descriptor[0]
+            final fun <get-descriptor>(): kotlinx.serialization.descriptors/SerialDescriptor // dev.kord.common.entity/DiscordRecurrenceRule.$serializer.descriptor.<get-descriptor>|<get-descriptor>(){}[0]
+
+        final fun childSerializers(): kotlin/Array<kotlinx.serialization/KSerializer<*>> // dev.kord.common.entity/DiscordRecurrenceRule.$serializer.childSerializers|childSerializers(){}[0]
+        final fun deserialize(kotlinx.serialization.encoding/Decoder): dev.kord.common.entity/DiscordRecurrenceRule // dev.kord.common.entity/DiscordRecurrenceRule.$serializer.deserialize|deserialize(kotlinx.serialization.encoding.Decoder){}[0]
+        final fun serialize(kotlinx.serialization.encoding/Encoder, dev.kord.common.entity/DiscordRecurrenceRule) // dev.kord.common.entity/DiscordRecurrenceRule.$serializer.serialize|serialize(kotlinx.serialization.encoding.Encoder;dev.kord.common.entity.DiscordRecurrenceRule){}[0]
+    }
+
+    final object Companion { // dev.kord.common.entity/DiscordRecurrenceRule.Companion|null[0]
+        final val $childSerializers // dev.kord.common.entity/DiscordRecurrenceRule.Companion.$childSerializers|{}$childSerializers[0]
+
+        final fun serializer(): kotlinx.serialization/KSerializer<dev.kord.common.entity/DiscordRecurrenceRule> // dev.kord.common.entity/DiscordRecurrenceRule.Companion.serializer|serializer(){}[0]
+    }
+}
+
+final class dev.kord.common.entity/DiscordRecurrenceRuleNWeekday { // dev.kord.common.entity/DiscordRecurrenceRuleNWeekday|null[0]
+    constructor <init>(kotlin/Int, kotlin/Int) // dev.kord.common.entity/DiscordRecurrenceRuleNWeekday.<init>|<init>(kotlin.Int;kotlin.Int){}[0]
+
+    final val day // dev.kord.common.entity/DiscordRecurrenceRuleNWeekday.day|{}day[0]
+        final fun <get-day>(): kotlin/Int // dev.kord.common.entity/DiscordRecurrenceRuleNWeekday.day.<get-day>|<get-day>(){}[0]
+    final val n // dev.kord.common.entity/DiscordRecurrenceRuleNWeekday.n|{}n[0]
+        final fun <get-n>(): kotlin/Int // dev.kord.common.entity/DiscordRecurrenceRuleNWeekday.n.<get-n>|<get-n>(){}[0]
+
+    final fun component1(): kotlin/Int // dev.kord.common.entity/DiscordRecurrenceRuleNWeekday.component1|component1(){}[0]
+    final fun component2(): kotlin/Int // dev.kord.common.entity/DiscordRecurrenceRuleNWeekday.component2|component2(){}[0]
+    final fun copy(kotlin/Int = ..., kotlin/Int = ...): dev.kord.common.entity/DiscordRecurrenceRuleNWeekday // dev.kord.common.entity/DiscordRecurrenceRuleNWeekday.copy|copy(kotlin.Int;kotlin.Int){}[0]
+    final fun equals(kotlin/Any?): kotlin/Boolean // dev.kord.common.entity/DiscordRecurrenceRuleNWeekday.equals|equals(kotlin.Any?){}[0]
+    final fun hashCode(): kotlin/Int // dev.kord.common.entity/DiscordRecurrenceRuleNWeekday.hashCode|hashCode(){}[0]
+    final fun toString(): kotlin/String // dev.kord.common.entity/DiscordRecurrenceRuleNWeekday.toString|toString(){}[0]
+
+    final object $serializer : kotlinx.serialization.internal/GeneratedSerializer<dev.kord.common.entity/DiscordRecurrenceRuleNWeekday> { // dev.kord.common.entity/DiscordRecurrenceRuleNWeekday.$serializer|null[0]
+        final val descriptor // dev.kord.common.entity/DiscordRecurrenceRuleNWeekday.$serializer.descriptor|{}descriptor[0]
+            final fun <get-descriptor>(): kotlinx.serialization.descriptors/SerialDescriptor // dev.kord.common.entity/DiscordRecurrenceRuleNWeekday.$serializer.descriptor.<get-descriptor>|<get-descriptor>(){}[0]
+
+        final fun childSerializers(): kotlin/Array<kotlinx.serialization/KSerializer<*>> // dev.kord.common.entity/DiscordRecurrenceRuleNWeekday.$serializer.childSerializers|childSerializers(){}[0]
+        final fun deserialize(kotlinx.serialization.encoding/Decoder): dev.kord.common.entity/DiscordRecurrenceRuleNWeekday // dev.kord.common.entity/DiscordRecurrenceRuleNWeekday.$serializer.deserialize|deserialize(kotlinx.serialization.encoding.Decoder){}[0]
+        final fun serialize(kotlinx.serialization.encoding/Encoder, dev.kord.common.entity/DiscordRecurrenceRuleNWeekday) // dev.kord.common.entity/DiscordRecurrenceRuleNWeekday.$serializer.serialize|serialize(kotlinx.serialization.encoding.Encoder;dev.kord.common.entity.DiscordRecurrenceRuleNWeekday){}[0]
+    }
+
+    final object Companion { // dev.kord.common.entity/DiscordRecurrenceRuleNWeekday.Companion|null[0]
+        final fun serializer(): kotlinx.serialization/KSerializer<dev.kord.common.entity/DiscordRecurrenceRuleNWeekday> // dev.kord.common.entity/DiscordRecurrenceRuleNWeekday.Companion.serializer|serializer(){}[0]
     }
 }
 
@@ -10017,6 +10104,109 @@ sealed class dev.kord.common.entity/PresenceStatus { // dev.kord.common.entity/P
     final object Offline : dev.kord.common.entity/PresenceStatus // dev.kord.common.entity/PresenceStatus.Offline|null[0]
 
     final object Online : dev.kord.common.entity/PresenceStatus // dev.kord.common.entity/PresenceStatus.Online|null[0]
+}
+
+sealed class dev.kord.common.entity/RecurrenceRuleFrequency { // dev.kord.common.entity/RecurrenceRuleFrequency|null[0]
+    final val value // dev.kord.common.entity/RecurrenceRuleFrequency.value|{}value[0]
+        final fun <get-value>(): kotlin/Int // dev.kord.common.entity/RecurrenceRuleFrequency.value.<get-value>|<get-value>(){}[0]
+
+    final fun equals(kotlin/Any?): kotlin/Boolean // dev.kord.common.entity/RecurrenceRuleFrequency.equals|equals(kotlin.Any?){}[0]
+    final fun hashCode(): kotlin/Int // dev.kord.common.entity/RecurrenceRuleFrequency.hashCode|hashCode(){}[0]
+    final fun toString(): kotlin/String // dev.kord.common.entity/RecurrenceRuleFrequency.toString|toString(){}[0]
+
+    final class Unknown : dev.kord.common.entity/RecurrenceRuleFrequency // dev.kord.common.entity/RecurrenceRuleFrequency.Unknown|null[0]
+
+    final object Companion { // dev.kord.common.entity/RecurrenceRuleFrequency.Companion|null[0]
+        final val entries // dev.kord.common.entity/RecurrenceRuleFrequency.Companion.entries|{}entries[0]
+            final fun <get-entries>(): kotlin.collections/List<dev.kord.common.entity/RecurrenceRuleFrequency> // dev.kord.common.entity/RecurrenceRuleFrequency.Companion.entries.<get-entries>|<get-entries>(){}[0]
+
+        final fun from(kotlin/Int): dev.kord.common.entity/RecurrenceRuleFrequency // dev.kord.common.entity/RecurrenceRuleFrequency.Companion.from|from(kotlin.Int){}[0]
+        final fun serializer(): kotlinx.serialization/KSerializer<dev.kord.common.entity/RecurrenceRuleFrequency> // dev.kord.common.entity/RecurrenceRuleFrequency.Companion.serializer|serializer(){}[0]
+    }
+
+    final object Daily : dev.kord.common.entity/RecurrenceRuleFrequency // dev.kord.common.entity/RecurrenceRuleFrequency.Daily|null[0]
+
+    final object Monthly : dev.kord.common.entity/RecurrenceRuleFrequency // dev.kord.common.entity/RecurrenceRuleFrequency.Monthly|null[0]
+
+    final object Weekly : dev.kord.common.entity/RecurrenceRuleFrequency // dev.kord.common.entity/RecurrenceRuleFrequency.Weekly|null[0]
+
+    final object Yearly : dev.kord.common.entity/RecurrenceRuleFrequency // dev.kord.common.entity/RecurrenceRuleFrequency.Yearly|null[0]
+}
+
+sealed class dev.kord.common.entity/RecurrenceRuleMonth { // dev.kord.common.entity/RecurrenceRuleMonth|null[0]
+    final val value // dev.kord.common.entity/RecurrenceRuleMonth.value|{}value[0]
+        final fun <get-value>(): kotlin/Int // dev.kord.common.entity/RecurrenceRuleMonth.value.<get-value>|<get-value>(){}[0]
+
+    final fun equals(kotlin/Any?): kotlin/Boolean // dev.kord.common.entity/RecurrenceRuleMonth.equals|equals(kotlin.Any?){}[0]
+    final fun hashCode(): kotlin/Int // dev.kord.common.entity/RecurrenceRuleMonth.hashCode|hashCode(){}[0]
+    final fun toString(): kotlin/String // dev.kord.common.entity/RecurrenceRuleMonth.toString|toString(){}[0]
+
+    final class Unknown : dev.kord.common.entity/RecurrenceRuleMonth // dev.kord.common.entity/RecurrenceRuleMonth.Unknown|null[0]
+
+    final object April : dev.kord.common.entity/RecurrenceRuleMonth // dev.kord.common.entity/RecurrenceRuleMonth.April|null[0]
+
+    final object August : dev.kord.common.entity/RecurrenceRuleMonth // dev.kord.common.entity/RecurrenceRuleMonth.August|null[0]
+
+    final object Companion { // dev.kord.common.entity/RecurrenceRuleMonth.Companion|null[0]
+        final val entries // dev.kord.common.entity/RecurrenceRuleMonth.Companion.entries|{}entries[0]
+            final fun <get-entries>(): kotlin.collections/List<dev.kord.common.entity/RecurrenceRuleMonth> // dev.kord.common.entity/RecurrenceRuleMonth.Companion.entries.<get-entries>|<get-entries>(){}[0]
+
+        final fun from(kotlin/Int): dev.kord.common.entity/RecurrenceRuleMonth // dev.kord.common.entity/RecurrenceRuleMonth.Companion.from|from(kotlin.Int){}[0]
+        final fun serializer(): kotlinx.serialization/KSerializer<dev.kord.common.entity/RecurrenceRuleMonth> // dev.kord.common.entity/RecurrenceRuleMonth.Companion.serializer|serializer(){}[0]
+    }
+
+    final object December : dev.kord.common.entity/RecurrenceRuleMonth // dev.kord.common.entity/RecurrenceRuleMonth.December|null[0]
+
+    final object February : dev.kord.common.entity/RecurrenceRuleMonth // dev.kord.common.entity/RecurrenceRuleMonth.February|null[0]
+
+    final object January : dev.kord.common.entity/RecurrenceRuleMonth // dev.kord.common.entity/RecurrenceRuleMonth.January|null[0]
+
+    final object July : dev.kord.common.entity/RecurrenceRuleMonth // dev.kord.common.entity/RecurrenceRuleMonth.July|null[0]
+
+    final object June : dev.kord.common.entity/RecurrenceRuleMonth // dev.kord.common.entity/RecurrenceRuleMonth.June|null[0]
+
+    final object March : dev.kord.common.entity/RecurrenceRuleMonth // dev.kord.common.entity/RecurrenceRuleMonth.March|null[0]
+
+    final object May : dev.kord.common.entity/RecurrenceRuleMonth // dev.kord.common.entity/RecurrenceRuleMonth.May|null[0]
+
+    final object November : dev.kord.common.entity/RecurrenceRuleMonth // dev.kord.common.entity/RecurrenceRuleMonth.November|null[0]
+
+    final object October : dev.kord.common.entity/RecurrenceRuleMonth // dev.kord.common.entity/RecurrenceRuleMonth.October|null[0]
+
+    final object September : dev.kord.common.entity/RecurrenceRuleMonth // dev.kord.common.entity/RecurrenceRuleMonth.September|null[0]
+}
+
+sealed class dev.kord.common.entity/RecurrenceRuleWeekday { // dev.kord.common.entity/RecurrenceRuleWeekday|null[0]
+    final val value // dev.kord.common.entity/RecurrenceRuleWeekday.value|{}value[0]
+        final fun <get-value>(): kotlin/Int // dev.kord.common.entity/RecurrenceRuleWeekday.value.<get-value>|<get-value>(){}[0]
+
+    final fun equals(kotlin/Any?): kotlin/Boolean // dev.kord.common.entity/RecurrenceRuleWeekday.equals|equals(kotlin.Any?){}[0]
+    final fun hashCode(): kotlin/Int // dev.kord.common.entity/RecurrenceRuleWeekday.hashCode|hashCode(){}[0]
+    final fun toString(): kotlin/String // dev.kord.common.entity/RecurrenceRuleWeekday.toString|toString(){}[0]
+
+    final class Unknown : dev.kord.common.entity/RecurrenceRuleWeekday // dev.kord.common.entity/RecurrenceRuleWeekday.Unknown|null[0]
+
+    final object Companion { // dev.kord.common.entity/RecurrenceRuleWeekday.Companion|null[0]
+        final val entries // dev.kord.common.entity/RecurrenceRuleWeekday.Companion.entries|{}entries[0]
+            final fun <get-entries>(): kotlin.collections/List<dev.kord.common.entity/RecurrenceRuleWeekday> // dev.kord.common.entity/RecurrenceRuleWeekday.Companion.entries.<get-entries>|<get-entries>(){}[0]
+
+        final fun from(kotlin/Int): dev.kord.common.entity/RecurrenceRuleWeekday // dev.kord.common.entity/RecurrenceRuleWeekday.Companion.from|from(kotlin.Int){}[0]
+        final fun serializer(): kotlinx.serialization/KSerializer<dev.kord.common.entity/RecurrenceRuleWeekday> // dev.kord.common.entity/RecurrenceRuleWeekday.Companion.serializer|serializer(){}[0]
+    }
+
+    final object Friday : dev.kord.common.entity/RecurrenceRuleWeekday // dev.kord.common.entity/RecurrenceRuleWeekday.Friday|null[0]
+
+    final object Monday : dev.kord.common.entity/RecurrenceRuleWeekday // dev.kord.common.entity/RecurrenceRuleWeekday.Monday|null[0]
+
+    final object Saturday : dev.kord.common.entity/RecurrenceRuleWeekday // dev.kord.common.entity/RecurrenceRuleWeekday.Saturday|null[0]
+
+    final object Sunday : dev.kord.common.entity/RecurrenceRuleWeekday // dev.kord.common.entity/RecurrenceRuleWeekday.Sunday|null[0]
+
+    final object Thursday : dev.kord.common.entity/RecurrenceRuleWeekday // dev.kord.common.entity/RecurrenceRuleWeekday.Thursday|null[0]
+
+    final object Tuesday : dev.kord.common.entity/RecurrenceRuleWeekday // dev.kord.common.entity/RecurrenceRuleWeekday.Tuesday|null[0]
+
+    final object Wednesday : dev.kord.common.entity/RecurrenceRuleWeekday // dev.kord.common.entity/RecurrenceRuleWeekday.Wednesday|null[0]
 }
 
 sealed class dev.kord.common.entity/RoleFlag { // dev.kord.common.entity/RoleFlag|null[0]
