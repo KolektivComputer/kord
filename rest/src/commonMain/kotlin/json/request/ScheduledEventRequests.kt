@@ -53,3 +53,25 @@ public data class ScheduledEventModifyRequest(
     @SerialName("recurrence_rule")
     val recurrenceRule: Optional<DiscordRecurrenceRule> = Optional.Missing(),
 )
+
+@Serializable
+public data class GuildScheduledEventExceptionCreateRequest(
+    @SerialName("original_scheduled_start_time")
+    val originalScheduledStartTime: Instant,
+    @SerialName("scheduled_start_time")
+    val scheduledStartTime: Optional<Instant?> = Optional.Missing(),
+    @SerialName("scheduled_end_time")
+    val scheduledEndTime: Optional<Instant?> = Optional.Missing(),
+    @SerialName("is_canceled")
+    val isCanceled: Optional<Boolean?> = Optional.Missing(),
+)
+
+@Serializable
+public data class ScheduledEventExceptionModifyRequest(
+    @SerialName("scheduled_start_time")
+    val scheduledStartTime: Optional<Instant?> = Optional.Missing(),
+    @SerialName("scheduled_end_time")
+    val scheduledEndTime: Optional<Instant?> = Optional.Missing(),
+    @SerialName("is_canceled")
+    val isCanceled: Optional<Boolean?> = Optional.Missing(),
+)

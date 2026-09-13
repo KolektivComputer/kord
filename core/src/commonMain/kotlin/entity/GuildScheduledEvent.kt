@@ -126,6 +126,12 @@ public class GuildScheduledEvent(
         get() = data.recurrenceRule
 
     /**
+     * The exceptions to the [recurrence rule][recurrenceRule] of this event.
+     */
+    public val guildScheduledEventExceptions: List<DiscordGuildScheduledEventException>
+        get() = data.guildScheduledEventExceptions
+
+    /**
      * Requests the [Guild] this event belongs to.
      *
      * @throws [RequestException] if anything went wrong during the request.

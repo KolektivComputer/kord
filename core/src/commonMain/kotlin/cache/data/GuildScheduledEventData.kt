@@ -27,6 +27,7 @@ public data class GuildScheduledEventData(
     val userCount: OptionalInt = OptionalInt.Missing,
     val image: Optional<String?> = Optional.Missing(),
     val recurrenceRule: DiscordRecurrenceRule? = null,
+    val guildScheduledEventExceptions: List<DiscordGuildScheduledEventException> = emptyList(),
 ) {
     public companion object {
         public fun from(event: DiscordGuildScheduledEvent): GuildScheduledEventData = with(event) {
@@ -48,6 +49,7 @@ public data class GuildScheduledEventData(
                 userCount = userCount,
                 image = image,
                 recurrenceRule = recurrenceRule,
+                guildScheduledEventExceptions = guildScheduledEventExceptions,
             )
         }
     }

@@ -13,6 +13,8 @@ import dev.kord.rest.builder.member.MemberModifyBuilder
 import dev.kord.rest.builder.role.RoleCreateBuilder
 import dev.kord.rest.builder.role.RoleModifyBuilder
 import dev.kord.rest.builder.role.RolePositionsModifyBuilder
+import dev.kord.rest.builder.scheduled_events.ScheduledEventExceptionCreateBuilder
+import dev.kord.rest.builder.scheduled_events.ScheduledEventExceptionModifyBuilder
 import dev.kord.rest.builder.scheduled_events.ScheduledEventModifyBuilder
 import dev.kord.rest.json.request.*
 import dev.kord.rest.json.response.*
@@ -689,6 +691,61 @@ public class GuildService(requestHandler: RequestHandler) : RestService(requestH
         limit,
     )
 
+    public suspend fun createScheduledEventException(
+        guildId: Snowflake,
+        eventId: Snowflake,
+        request: GuildScheduledEventExceptionCreateRequest,
+        reason: String? = null,
+    ): DiscordGuildScheduledEventException = call(Route.GuildScheduledEventExceptionPost) {
+        keys[Route.GuildId] = guildId
+        keys[Route.ScheduledEventId] = eventId
+        auditLogReason(reason)
+        body(GuildScheduledEventExceptionCreateRequest.serializer(), request)
+    }
+
+    public suspend fun modifyScheduledEventException(
+        guildId: Snowflake,
+        eventId: Snowflake,
+        exceptionId: Snowflake,
+        request: ScheduledEventExceptionModifyRequest,
+        reason: String? = null,
+    ): DiscordGuildScheduledEventException = call(Route.GuildScheduledEventExceptionPatch) {
+        keys[Route.GuildId] = guildId
+        keys[Route.ScheduledEventId] = eventId
+        keys[Route.ScheduledEventExceptionId] = exceptionId
+        auditLogReason(reason)
+        body(ScheduledEventExceptionModifyRequest.serializer(), request)
+    }
+
+    public suspend fun deleteScheduledEventException(
+        guildId: Snowflake,
+        eventId: Snowflake,
+        exceptionId: Snowflake,
+        reason: String? = null,
+    ): Unit = call(Route.GuildScheduledEventExceptionDelete) {
+        keys[Route.GuildId] = guildId
+        keys[Route.ScheduledEventId] = eventId
+        keys[Route.ScheduledEventExceptionId] = exceptionId
+        auditLogReason(reason)
+    }
+
+    public suspend fun getScheduledEventExceptionUsers(
+        guildId: Snowflake,
+        eventId: Snowflake,
+        exceptionId: Snowflake,
+        withMember: Boolean? = null,
+        limit: Int? = null,
+        position: Position.BeforeOrAfter? = null,
+    ): List<GuildScheduledEventUsersResponse> = call(Route.GuildScheduledEventExceptionUsersGet) {
+        keys[Route.GuildId] = guildId
+        keys[Route.ScheduledEventId] = eventId
+        keys[Route.ScheduledEventExceptionId] = exceptionId
+
+        limit?.let { parameter("limit", it) }
+        withMember?.let { parameter("with_member", it) }
+        position?.let { parameter(it.key, it.value) }
+    }
+
     @DiscordAPIPreview
     public suspend fun getGuildProfile(guildId: Snowflake): DiscordGuildProfile = call(Route.GuildProfileGet) {
         keys[Route.GuildId] = guildId
@@ -897,6 +954,42 @@ public suspend inline fun GuildService.modifyScheduledEvent(
     val appliedBuilder = ScheduledEventModifyBuilder().apply(builder)
 
     return modifyScheduledEvent(guildId, eventId, appliedBuilder.toRequest(), appliedBuilder.reason)
+}
+
+public suspend inline fun GuildService.createScheduledEventException(
+    guildId: Snowflake,
+    eventId: Snowflake,
+    originalScheduledStartTime: Instant,
+    builder: ScheduledEventExceptionCreateBuilder.() -> Unit = {}
+): DiscordGuildScheduledEventException {
+    contract {
+        callsInPlace(builder, InvocationKind.EXACTLY_ONCE)
+    }
+
+    val appliedBuilder = ScheduledEventExceptionCreateBuilder(originalScheduledStartTime).apply(builder)
+
+    return createScheduledEventException(guildId, eventId, appliedBuilder.toRequest(), appliedBuilder.reason)
+}
+
+public suspend inline fun GuildService.modifyScheduledEventException(
+    guildId: Snowflake,
+    eventId: Snowflake,
+    exceptionId: Snowflake,
+    builder: ScheduledEventExceptionModifyBuilder.() -> Unit
+): DiscordGuildScheduledEventException {
+    contract {
+        callsInPlace(builder, InvocationKind.EXACTLY_ONCE)
+    }
+
+    val appliedBuilder = ScheduledEventExceptionModifyBuilder().apply(builder)
+
+    return modifyScheduledEventException(
+        guildId,
+        eventId,
+        exceptionId,
+        appliedBuilder.toRequest(),
+        appliedBuilder.reason
+    )
 }
 
 /**

@@ -3665,6 +3665,47 @@ final class dev.kord.rest.builder.role/RolePositionsModifyBuilder : dev.kord.res
     final fun toRequest(): dev.kord.rest.json.request/GuildRolePositionModifyRequest // dev.kord.rest.builder.role/RolePositionsModifyBuilder.toRequest|toRequest(){}[0]
 }
 
+final class dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionCreateBuilder : dev.kord.rest.builder/AuditRequestBuilder<dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest> { // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionCreateBuilder|null[0]
+    constructor <init>(kotlin.time/Instant) // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionCreateBuilder.<init>|<init>(kotlin.time.Instant){}[0]
+
+    final var isCanceled // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionCreateBuilder.isCanceled|{}isCanceled[0]
+        final fun <get-isCanceled>(): kotlin/Boolean? // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionCreateBuilder.isCanceled.<get-isCanceled>|<get-isCanceled>(){}[0]
+        final fun <set-isCanceled>(kotlin/Boolean?) // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionCreateBuilder.isCanceled.<set-isCanceled>|<set-isCanceled>(kotlin.Boolean?){}[0]
+    final var originalScheduledStartTime // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionCreateBuilder.originalScheduledStartTime|{}originalScheduledStartTime[0]
+        final fun <get-originalScheduledStartTime>(): kotlin.time/Instant // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionCreateBuilder.originalScheduledStartTime.<get-originalScheduledStartTime>|<get-originalScheduledStartTime>(){}[0]
+        final fun <set-originalScheduledStartTime>(kotlin.time/Instant) // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionCreateBuilder.originalScheduledStartTime.<set-originalScheduledStartTime>|<set-originalScheduledStartTime>(kotlin.time.Instant){}[0]
+    final var reason // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionCreateBuilder.reason|{}reason[0]
+        final fun <get-reason>(): kotlin/String? // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionCreateBuilder.reason.<get-reason>|<get-reason>(){}[0]
+        final fun <set-reason>(kotlin/String?) // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionCreateBuilder.reason.<set-reason>|<set-reason>(kotlin.String?){}[0]
+    final var scheduledEndTime // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionCreateBuilder.scheduledEndTime|{}scheduledEndTime[0]
+        final fun <get-scheduledEndTime>(): kotlin.time/Instant? // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionCreateBuilder.scheduledEndTime.<get-scheduledEndTime>|<get-scheduledEndTime>(){}[0]
+        final fun <set-scheduledEndTime>(kotlin.time/Instant?) // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionCreateBuilder.scheduledEndTime.<set-scheduledEndTime>|<set-scheduledEndTime>(kotlin.time.Instant?){}[0]
+    final var scheduledStartTime // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionCreateBuilder.scheduledStartTime|{}scheduledStartTime[0]
+        final fun <get-scheduledStartTime>(): kotlin.time/Instant? // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionCreateBuilder.scheduledStartTime.<get-scheduledStartTime>|<get-scheduledStartTime>(){}[0]
+        final fun <set-scheduledStartTime>(kotlin.time/Instant?) // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionCreateBuilder.scheduledStartTime.<set-scheduledStartTime>|<set-scheduledStartTime>(kotlin.time.Instant?){}[0]
+
+    final fun toRequest(): dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionCreateBuilder.toRequest|toRequest(){}[0]
+}
+
+final class dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionModifyBuilder : dev.kord.rest.builder/AuditRequestBuilder<dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest> { // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionModifyBuilder|null[0]
+    constructor <init>() // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionModifyBuilder.<init>|<init>(){}[0]
+
+    final var isCanceled // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionModifyBuilder.isCanceled|{}isCanceled[0]
+        final fun <get-isCanceled>(): kotlin/Boolean? // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionModifyBuilder.isCanceled.<get-isCanceled>|<get-isCanceled>(){}[0]
+        final fun <set-isCanceled>(kotlin/Boolean?) // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionModifyBuilder.isCanceled.<set-isCanceled>|<set-isCanceled>(kotlin.Boolean?){}[0]
+    final var reason // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionModifyBuilder.reason|{}reason[0]
+        final fun <get-reason>(): kotlin/String? // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionModifyBuilder.reason.<get-reason>|<get-reason>(){}[0]
+        final fun <set-reason>(kotlin/String?) // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionModifyBuilder.reason.<set-reason>|<set-reason>(kotlin.String?){}[0]
+    final var scheduledEndTime // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionModifyBuilder.scheduledEndTime|{}scheduledEndTime[0]
+        final fun <get-scheduledEndTime>(): kotlin.time/Instant? // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionModifyBuilder.scheduledEndTime.<get-scheduledEndTime>|<get-scheduledEndTime>(){}[0]
+        final fun <set-scheduledEndTime>(kotlin.time/Instant?) // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionModifyBuilder.scheduledEndTime.<set-scheduledEndTime>|<set-scheduledEndTime>(kotlin.time.Instant?){}[0]
+    final var scheduledStartTime // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionModifyBuilder.scheduledStartTime|{}scheduledStartTime[0]
+        final fun <get-scheduledStartTime>(): kotlin.time/Instant? // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionModifyBuilder.scheduledStartTime.<get-scheduledStartTime>|<get-scheduledStartTime>(){}[0]
+        final fun <set-scheduledStartTime>(kotlin.time/Instant?) // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionModifyBuilder.scheduledStartTime.<set-scheduledStartTime>|<set-scheduledStartTime>(kotlin.time.Instant?){}[0]
+
+    final fun toRequest(): dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest // dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionModifyBuilder.toRequest|toRequest(){}[0]
+}
+
 final class dev.kord.rest.builder.scheduled_events/ScheduledEventModifyBuilder : dev.kord.rest.builder/AuditRequestBuilder<dev.kord.rest.json.request/ScheduledEventModifyRequest> { // dev.kord.rest.builder.scheduled_events/ScheduledEventModifyBuilder|null[0]
     constructor <init>() // dev.kord.rest.builder.scheduled_events/ScheduledEventModifyBuilder.<init>|<init>(){}[0]
 
@@ -5897,9 +5938,48 @@ final class dev.kord.rest.json.request/GuildScheduledEventCreateRequest { // dev
     }
 }
 
-final class dev.kord.rest.json.request/GuildScheduledEventUsersResponse { // dev.kord.rest.json.request/GuildScheduledEventUsersResponse|null[0]
-    constructor <init>(dev.kord.common.entity/Snowflake, dev.kord.common.entity/DiscordUser, dev.kord.common.entity.optional/Optional<dev.kord.common.entity/DiscordGuildMember> = ...) // dev.kord.rest.json.request/GuildScheduledEventUsersResponse.<init>|<init>(dev.kord.common.entity.Snowflake;dev.kord.common.entity.DiscordUser;dev.kord.common.entity.optional.Optional<dev.kord.common.entity.DiscordGuildMember>){}[0]
+final class dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest { // dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest|null[0]
+    constructor <init>(kotlin.time/Instant, dev.kord.common.entity.optional/Optional<kotlin.time/Instant?> = ..., dev.kord.common.entity.optional/Optional<kotlin.time/Instant?> = ..., dev.kord.common.entity.optional/Optional<kotlin/Boolean?> = ...) // dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest.<init>|<init>(kotlin.time.Instant;dev.kord.common.entity.optional.Optional<kotlin.time.Instant?>;dev.kord.common.entity.optional.Optional<kotlin.time.Instant?>;dev.kord.common.entity.optional.Optional<kotlin.Boolean?>){}[0]
 
+    final val isCanceled // dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest.isCanceled|{}isCanceled[0]
+        final fun <get-isCanceled>(): dev.kord.common.entity.optional/Optional<kotlin/Boolean?> // dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest.isCanceled.<get-isCanceled>|<get-isCanceled>(){}[0]
+    final val originalScheduledStartTime // dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest.originalScheduledStartTime|{}originalScheduledStartTime[0]
+        final fun <get-originalScheduledStartTime>(): kotlin.time/Instant // dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest.originalScheduledStartTime.<get-originalScheduledStartTime>|<get-originalScheduledStartTime>(){}[0]
+    final val scheduledEndTime // dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest.scheduledEndTime|{}scheduledEndTime[0]
+        final fun <get-scheduledEndTime>(): dev.kord.common.entity.optional/Optional<kotlin.time/Instant?> // dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest.scheduledEndTime.<get-scheduledEndTime>|<get-scheduledEndTime>(){}[0]
+    final val scheduledStartTime // dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest.scheduledStartTime|{}scheduledStartTime[0]
+        final fun <get-scheduledStartTime>(): dev.kord.common.entity.optional/Optional<kotlin.time/Instant?> // dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest.scheduledStartTime.<get-scheduledStartTime>|<get-scheduledStartTime>(){}[0]
+
+    final fun component1(): kotlin.time/Instant // dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest.component1|component1(){}[0]
+    final fun component2(): dev.kord.common.entity.optional/Optional<kotlin.time/Instant?> // dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest.component2|component2(){}[0]
+    final fun component3(): dev.kord.common.entity.optional/Optional<kotlin.time/Instant?> // dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest.component3|component3(){}[0]
+    final fun component4(): dev.kord.common.entity.optional/Optional<kotlin/Boolean?> // dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest.component4|component4(){}[0]
+    final fun copy(kotlin.time/Instant = ..., dev.kord.common.entity.optional/Optional<kotlin.time/Instant?> = ..., dev.kord.common.entity.optional/Optional<kotlin.time/Instant?> = ..., dev.kord.common.entity.optional/Optional<kotlin/Boolean?> = ...): dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest // dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest.copy|copy(kotlin.time.Instant;dev.kord.common.entity.optional.Optional<kotlin.time.Instant?>;dev.kord.common.entity.optional.Optional<kotlin.time.Instant?>;dev.kord.common.entity.optional.Optional<kotlin.Boolean?>){}[0]
+    final fun equals(kotlin/Any?): kotlin/Boolean // dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest.equals|equals(kotlin.Any?){}[0]
+    final fun hashCode(): kotlin/Int // dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest.hashCode|hashCode(){}[0]
+    final fun toString(): kotlin/String // dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest.toString|toString(){}[0]
+
+    final object $serializer : kotlinx.serialization.internal/GeneratedSerializer<dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest> { // dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest.$serializer|null[0]
+        final val descriptor // dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest.$serializer.descriptor|{}descriptor[0]
+            final fun <get-descriptor>(): kotlinx.serialization.descriptors/SerialDescriptor // dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest.$serializer.descriptor.<get-descriptor>|<get-descriptor>(){}[0]
+
+        final fun childSerializers(): kotlin/Array<kotlinx.serialization/KSerializer<*>> // dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest.$serializer.childSerializers|childSerializers(){}[0]
+        final fun deserialize(kotlinx.serialization.encoding/Decoder): dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest // dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest.$serializer.deserialize|deserialize(kotlinx.serialization.encoding.Decoder){}[0]
+        final fun serialize(kotlinx.serialization.encoding/Encoder, dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest) // dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest.$serializer.serialize|serialize(kotlinx.serialization.encoding.Encoder;dev.kord.rest.json.request.GuildScheduledEventExceptionCreateRequest){}[0]
+    }
+
+    final object Companion { // dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest.Companion|null[0]
+        final val $childSerializers // dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest.Companion.$childSerializers|{}$childSerializers[0]
+
+        final fun serializer(): kotlinx.serialization/KSerializer<dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest> // dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest.Companion.serializer|serializer(){}[0]
+    }
+}
+
+final class dev.kord.rest.json.request/GuildScheduledEventUsersResponse { // dev.kord.rest.json.request/GuildScheduledEventUsersResponse|null[0]
+    constructor <init>(dev.kord.common.entity/Snowflake, dev.kord.common.entity/DiscordUser, dev.kord.common.entity.optional/Optional<dev.kord.common.entity/DiscordGuildMember> = ..., dev.kord.common.entity.optional/OptionalSnowflake? = ...) // dev.kord.rest.json.request/GuildScheduledEventUsersResponse.<init>|<init>(dev.kord.common.entity.Snowflake;dev.kord.common.entity.DiscordUser;dev.kord.common.entity.optional.Optional<dev.kord.common.entity.DiscordGuildMember>;dev.kord.common.entity.optional.OptionalSnowflake?){}[0]
+
+    final val guildScheduledEventExceptionId // dev.kord.rest.json.request/GuildScheduledEventUsersResponse.guildScheduledEventExceptionId|{}guildScheduledEventExceptionId[0]
+        final fun <get-guildScheduledEventExceptionId>(): dev.kord.common.entity.optional/OptionalSnowflake? // dev.kord.rest.json.request/GuildScheduledEventUsersResponse.guildScheduledEventExceptionId.<get-guildScheduledEventExceptionId>|<get-guildScheduledEventExceptionId>(){}[0]
     final val guildScheduledEventId // dev.kord.rest.json.request/GuildScheduledEventUsersResponse.guildScheduledEventId|{}guildScheduledEventId[0]
         final fun <get-guildScheduledEventId>(): dev.kord.common.entity/Snowflake // dev.kord.rest.json.request/GuildScheduledEventUsersResponse.guildScheduledEventId.<get-guildScheduledEventId>|<get-guildScheduledEventId>(){}[0]
     final val member // dev.kord.rest.json.request/GuildScheduledEventUsersResponse.member|{}member[0]
@@ -5910,7 +5990,8 @@ final class dev.kord.rest.json.request/GuildScheduledEventUsersResponse { // dev
     final fun component1(): dev.kord.common.entity/Snowflake // dev.kord.rest.json.request/GuildScheduledEventUsersResponse.component1|component1(){}[0]
     final fun component2(): dev.kord.common.entity/DiscordUser // dev.kord.rest.json.request/GuildScheduledEventUsersResponse.component2|component2(){}[0]
     final fun component3(): dev.kord.common.entity.optional/Optional<dev.kord.common.entity/DiscordGuildMember> // dev.kord.rest.json.request/GuildScheduledEventUsersResponse.component3|component3(){}[0]
-    final fun copy(dev.kord.common.entity/Snowflake = ..., dev.kord.common.entity/DiscordUser = ..., dev.kord.common.entity.optional/Optional<dev.kord.common.entity/DiscordGuildMember> = ...): dev.kord.rest.json.request/GuildScheduledEventUsersResponse // dev.kord.rest.json.request/GuildScheduledEventUsersResponse.copy|copy(dev.kord.common.entity.Snowflake;dev.kord.common.entity.DiscordUser;dev.kord.common.entity.optional.Optional<dev.kord.common.entity.DiscordGuildMember>){}[0]
+    final fun component4(): dev.kord.common.entity.optional/OptionalSnowflake? // dev.kord.rest.json.request/GuildScheduledEventUsersResponse.component4|component4(){}[0]
+    final fun copy(dev.kord.common.entity/Snowflake = ..., dev.kord.common.entity/DiscordUser = ..., dev.kord.common.entity.optional/Optional<dev.kord.common.entity/DiscordGuildMember> = ..., dev.kord.common.entity.optional/OptionalSnowflake? = ...): dev.kord.rest.json.request/GuildScheduledEventUsersResponse // dev.kord.rest.json.request/GuildScheduledEventUsersResponse.copy|copy(dev.kord.common.entity.Snowflake;dev.kord.common.entity.DiscordUser;dev.kord.common.entity.optional.Optional<dev.kord.common.entity.DiscordGuildMember>;dev.kord.common.entity.optional.OptionalSnowflake?){}[0]
     final fun equals(kotlin/Any?): kotlin/Boolean // dev.kord.rest.json.request/GuildScheduledEventUsersResponse.equals|equals(kotlin.Any?){}[0]
     final fun hashCode(): kotlin/Int // dev.kord.rest.json.request/GuildScheduledEventUsersResponse.hashCode|hashCode(){}[0]
     final fun toString(): kotlin/String // dev.kord.rest.json.request/GuildScheduledEventUsersResponse.toString|toString(){}[0]
@@ -6764,6 +6845,40 @@ final class dev.kord.rest.json.request/OnboardingPromptRequest { // dev.kord.res
         final val $childSerializers // dev.kord.rest.json.request/OnboardingPromptRequest.Companion.$childSerializers|{}$childSerializers[0]
 
         final fun serializer(): kotlinx.serialization/KSerializer<dev.kord.rest.json.request/OnboardingPromptRequest> // dev.kord.rest.json.request/OnboardingPromptRequest.Companion.serializer|serializer(){}[0]
+    }
+}
+
+final class dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest { // dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest|null[0]
+    constructor <init>(dev.kord.common.entity.optional/Optional<kotlin.time/Instant?> = ..., dev.kord.common.entity.optional/Optional<kotlin.time/Instant?> = ..., dev.kord.common.entity.optional/Optional<kotlin/Boolean?> = ...) // dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest.<init>|<init>(dev.kord.common.entity.optional.Optional<kotlin.time.Instant?>;dev.kord.common.entity.optional.Optional<kotlin.time.Instant?>;dev.kord.common.entity.optional.Optional<kotlin.Boolean?>){}[0]
+
+    final val isCanceled // dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest.isCanceled|{}isCanceled[0]
+        final fun <get-isCanceled>(): dev.kord.common.entity.optional/Optional<kotlin/Boolean?> // dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest.isCanceled.<get-isCanceled>|<get-isCanceled>(){}[0]
+    final val scheduledEndTime // dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest.scheduledEndTime|{}scheduledEndTime[0]
+        final fun <get-scheduledEndTime>(): dev.kord.common.entity.optional/Optional<kotlin.time/Instant?> // dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest.scheduledEndTime.<get-scheduledEndTime>|<get-scheduledEndTime>(){}[0]
+    final val scheduledStartTime // dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest.scheduledStartTime|{}scheduledStartTime[0]
+        final fun <get-scheduledStartTime>(): dev.kord.common.entity.optional/Optional<kotlin.time/Instant?> // dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest.scheduledStartTime.<get-scheduledStartTime>|<get-scheduledStartTime>(){}[0]
+
+    final fun component1(): dev.kord.common.entity.optional/Optional<kotlin.time/Instant?> // dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest.component1|component1(){}[0]
+    final fun component2(): dev.kord.common.entity.optional/Optional<kotlin.time/Instant?> // dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest.component2|component2(){}[0]
+    final fun component3(): dev.kord.common.entity.optional/Optional<kotlin/Boolean?> // dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest.component3|component3(){}[0]
+    final fun copy(dev.kord.common.entity.optional/Optional<kotlin.time/Instant?> = ..., dev.kord.common.entity.optional/Optional<kotlin.time/Instant?> = ..., dev.kord.common.entity.optional/Optional<kotlin/Boolean?> = ...): dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest // dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest.copy|copy(dev.kord.common.entity.optional.Optional<kotlin.time.Instant?>;dev.kord.common.entity.optional.Optional<kotlin.time.Instant?>;dev.kord.common.entity.optional.Optional<kotlin.Boolean?>){}[0]
+    final fun equals(kotlin/Any?): kotlin/Boolean // dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest.equals|equals(kotlin.Any?){}[0]
+    final fun hashCode(): kotlin/Int // dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest.hashCode|hashCode(){}[0]
+    final fun toString(): kotlin/String // dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest.toString|toString(){}[0]
+
+    final object $serializer : kotlinx.serialization.internal/GeneratedSerializer<dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest> { // dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest.$serializer|null[0]
+        final val descriptor // dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest.$serializer.descriptor|{}descriptor[0]
+            final fun <get-descriptor>(): kotlinx.serialization.descriptors/SerialDescriptor // dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest.$serializer.descriptor.<get-descriptor>|<get-descriptor>(){}[0]
+
+        final fun childSerializers(): kotlin/Array<kotlinx.serialization/KSerializer<*>> // dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest.$serializer.childSerializers|childSerializers(){}[0]
+        final fun deserialize(kotlinx.serialization.encoding/Decoder): dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest // dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest.$serializer.deserialize|deserialize(kotlinx.serialization.encoding.Decoder){}[0]
+        final fun serialize(kotlinx.serialization.encoding/Encoder, dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest) // dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest.$serializer.serialize|serialize(kotlinx.serialization.encoding.Encoder;dev.kord.rest.json.request.ScheduledEventExceptionModifyRequest){}[0]
+    }
+
+    final object Companion { // dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest.Companion|null[0]
+        final val $childSerializers // dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest.Companion.$childSerializers|{}$childSerializers[0]
+
+        final fun serializer(): kotlinx.serialization/KSerializer<dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest> // dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest.Companion.serializer|serializer(){}[0]
     }
 }
 
@@ -8002,6 +8117,7 @@ final class dev.kord.rest.service/GuildService : dev.kord.rest.service/RestServi
     final suspend fun createGuildJoinRequestInterview(dev.kord.common.entity/Snowflake): dev.kord.common.entity/DiscordChannel // dev.kord.rest.service/GuildService.createGuildJoinRequestInterview|createGuildJoinRequestInterview(dev.kord.common.entity.Snowflake){}[0]
     final suspend fun createGuildSoundboardSound(dev.kord.common.entity/Snowflake, dev.kord.rest.json.request/CreateSoundboardSoundRequest, kotlin/String? = ...): dev.kord.common.entity/DiscordSoundboardSound // dev.kord.rest.service/GuildService.createGuildSoundboardSound|createGuildSoundboardSound(dev.kord.common.entity.Snowflake;dev.kord.rest.json.request.CreateSoundboardSoundRequest;kotlin.String?){}[0]
     final suspend fun createScheduledEvent(dev.kord.common.entity/Snowflake, dev.kord.rest.json.request/GuildScheduledEventCreateRequest, kotlin/String? = ...): dev.kord.common.entity/DiscordGuildScheduledEvent // dev.kord.rest.service/GuildService.createScheduledEvent|createScheduledEvent(dev.kord.common.entity.Snowflake;dev.kord.rest.json.request.GuildScheduledEventCreateRequest;kotlin.String?){}[0]
+    final suspend fun createScheduledEventException(dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake, dev.kord.rest.json.request/GuildScheduledEventExceptionCreateRequest, kotlin/String? = ...): dev.kord.common.entity/DiscordGuildScheduledEventException // dev.kord.rest.service/GuildService.createScheduledEventException|createScheduledEventException(dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake;dev.kord.rest.json.request.GuildScheduledEventExceptionCreateRequest;kotlin.String?){}[0]
     final suspend fun deleteGuild(dev.kord.common.entity/Snowflake) // dev.kord.rest.service/GuildService.deleteGuild|deleteGuild(dev.kord.common.entity.Snowflake){}[0]
     final suspend fun deleteGuildBan(dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake, kotlin/String? = ...) // dev.kord.rest.service/GuildService.deleteGuildBan|deleteGuildBan(dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake;kotlin.String?){}[0]
     final suspend fun deleteGuildIntegration(dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake, kotlin/String? = ...) // dev.kord.rest.service/GuildService.deleteGuildIntegration|deleteGuildIntegration(dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake;kotlin.String?){}[0]
@@ -8011,6 +8127,7 @@ final class dev.kord.rest.service/GuildService : dev.kord.rest.service/RestServi
     final suspend fun deleteGuildSoundboardSound(dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake, kotlin/String? = ...) // dev.kord.rest.service/GuildService.deleteGuildSoundboardSound|deleteGuildSoundboardSound(dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake;kotlin.String?){}[0]
     final suspend fun deleteRoleFromGuildMember(dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake, kotlin/String? = ...) // dev.kord.rest.service/GuildService.deleteRoleFromGuildMember|deleteRoleFromGuildMember(dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake;kotlin.String?){}[0]
     final suspend fun deleteScheduledEvent(dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake) // dev.kord.rest.service/GuildService.deleteScheduledEvent|deleteScheduledEvent(dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake){}[0]
+    final suspend fun deleteScheduledEventException(dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake, kotlin/String? = ...) // dev.kord.rest.service/GuildService.deleteScheduledEventException|deleteScheduledEventException(dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake;kotlin.String?){}[0]
     final suspend fun getGuild(dev.kord.common.entity/Snowflake, kotlin/Boolean = ...): dev.kord.common.entity/DiscordGuild // dev.kord.rest.service/GuildService.getGuild|getGuild(dev.kord.common.entity.Snowflake;kotlin.Boolean){}[0]
     final suspend fun getGuildBan(dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake): dev.kord.rest.json.response/BanResponse // dev.kord.rest.service/GuildService.getGuildBan|getGuildBan(dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake){}[0]
     final suspend fun getGuildBans(dev.kord.common.entity/Snowflake, dev.kord.rest.route/Position.BeforeOrAfter? = ..., kotlin/Int? = ...): kotlin.collections/List<dev.kord.rest.json.response/BanResponse> // dev.kord.rest.service/GuildService.getGuildBans|getGuildBans(dev.kord.common.entity.Snowflake;dev.kord.rest.route.Position.BeforeOrAfter?;kotlin.Int?){}[0]
@@ -8037,6 +8154,7 @@ final class dev.kord.rest.service/GuildService : dev.kord.rest.service/RestServi
     final suspend fun getGuildWelcomeScreen(dev.kord.common.entity/Snowflake): dev.kord.common.entity/DiscordWelcomeScreen // dev.kord.rest.service/GuildService.getGuildWelcomeScreen|getGuildWelcomeScreen(dev.kord.common.entity.Snowflake){}[0]
     final suspend fun getGuildWidget(dev.kord.common.entity/Snowflake): dev.kord.common.entity/DiscordGuildWidget // dev.kord.rest.service/GuildService.getGuildWidget|getGuildWidget(dev.kord.common.entity.Snowflake){}[0]
     final suspend fun getScheduledEvent(dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake): dev.kord.common.entity/DiscordGuildScheduledEvent // dev.kord.rest.service/GuildService.getScheduledEvent|getScheduledEvent(dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake){}[0]
+    final suspend fun getScheduledEventExceptionUsers(dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake, kotlin/Boolean? = ..., kotlin/Int? = ..., dev.kord.rest.route/Position.BeforeOrAfter? = ...): kotlin.collections/List<dev.kord.rest.json.request/GuildScheduledEventUsersResponse> // dev.kord.rest.service/GuildService.getScheduledEventExceptionUsers|getScheduledEventExceptionUsers(dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake;kotlin.Boolean?;kotlin.Int?;dev.kord.rest.route.Position.BeforeOrAfter?){}[0]
     final suspend fun getScheduledEventUsers(dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake, dev.kord.rest.route/Position.BeforeOrAfter? = ..., kotlin/Boolean? = ..., kotlin/Int? = ...): kotlin.collections/List<dev.kord.rest.json.request/GuildScheduledEventUsersResponse> // dev.kord.rest.service/GuildService.getScheduledEventUsers|getScheduledEventUsers(dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake;dev.kord.rest.route.Position.BeforeOrAfter?;kotlin.Boolean?;kotlin.Int?){}[0]
     final suspend fun getScheduledEventUsersAfter(dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake, kotlin/Boolean? = ..., kotlin/Int? = ...): kotlin.collections/List<dev.kord.rest.json.request/GuildScheduledEventUsersResponse> // dev.kord.rest.service/GuildService.getScheduledEventUsersAfter|getScheduledEventUsersAfter(dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake;kotlin.Boolean?;kotlin.Int?){}[0]
     final suspend fun getScheduledEventUsersBefore(dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake, kotlin/Boolean? = ..., kotlin/Int? = ...): kotlin.collections/List<dev.kord.rest.json.request/GuildScheduledEventUsersResponse> // dev.kord.rest.service/GuildService.getScheduledEventUsersBefore|getScheduledEventUsersBefore(dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake;kotlin.Boolean?;kotlin.Int?){}[0]
@@ -8054,6 +8172,7 @@ final class dev.kord.rest.service/GuildService : dev.kord.rest.service/RestServi
     final suspend fun modifyGuildWelcomeScreen(dev.kord.common.entity/Snowflake, dev.kord.rest.json.request/GuildWelcomeScreenModifyRequest, kotlin/String? = ...): dev.kord.common.entity/DiscordWelcomeScreen // dev.kord.rest.service/GuildService.modifyGuildWelcomeScreen|modifyGuildWelcomeScreen(dev.kord.common.entity.Snowflake;dev.kord.rest.json.request.GuildWelcomeScreenModifyRequest;kotlin.String?){}[0]
     final suspend fun modifyGuildWidget(dev.kord.common.entity/Snowflake, dev.kord.rest.json.request/GuildWidgetModifyRequest, kotlin/String? = ...): dev.kord.common.entity/DiscordGuildWidget // dev.kord.rest.service/GuildService.modifyGuildWidget|modifyGuildWidget(dev.kord.common.entity.Snowflake;dev.kord.rest.json.request.GuildWidgetModifyRequest;kotlin.String?){}[0]
     final suspend fun modifyScheduledEvent(dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake, dev.kord.rest.json.request/ScheduledEventModifyRequest, kotlin/String? = ...): dev.kord.common.entity/DiscordGuildScheduledEvent // dev.kord.rest.service/GuildService.modifyScheduledEvent|modifyScheduledEvent(dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake;dev.kord.rest.json.request.ScheduledEventModifyRequest;kotlin.String?){}[0]
+    final suspend fun modifyScheduledEventException(dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake, dev.kord.rest.json.request/ScheduledEventExceptionModifyRequest, kotlin/String? = ...): dev.kord.common.entity/DiscordGuildScheduledEventException // dev.kord.rest.service/GuildService.modifyScheduledEventException|modifyScheduledEventException(dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake;dev.kord.rest.json.request.ScheduledEventExceptionModifyRequest;kotlin.String?){}[0]
     final suspend fun modifyVoiceState(dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake, dev.kord.rest.json.request/VoiceStateModifyRequest) // dev.kord.rest.service/GuildService.modifyVoiceState|modifyVoiceState(dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake;dev.kord.rest.json.request.VoiceStateModifyRequest){}[0]
     final suspend fun resetGuildJoinRequest(dev.kord.common.entity/Snowflake): dev.kord.common.entity/DiscordGuildJoinRequest // dev.kord.rest.service/GuildService.resetGuildJoinRequest|resetGuildJoinRequest(dev.kord.common.entity.Snowflake){}[0]
     final suspend fun syncGuildIntegration(dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake) // dev.kord.rest.service/GuildService.syncGuildIntegration|syncGuildIntegration(dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake){}[0]
@@ -8767,6 +8886,14 @@ sealed class <#A: kotlin/Any?> dev.kord.rest.route/Route { // dev.kord.rest.rout
 
     final object GuildScheduledEventDelete : dev.kord.rest.route/Route<kotlin/Unit> // dev.kord.rest.route/Route.GuildScheduledEventDelete|null[0]
 
+    final object GuildScheduledEventExceptionDelete : dev.kord.rest.route/Route<kotlin/Unit> // dev.kord.rest.route/Route.GuildScheduledEventExceptionDelete|null[0]
+
+    final object GuildScheduledEventExceptionPatch : dev.kord.rest.route/Route<dev.kord.common.entity/DiscordGuildScheduledEventException> // dev.kord.rest.route/Route.GuildScheduledEventExceptionPatch|null[0]
+
+    final object GuildScheduledEventExceptionPost : dev.kord.rest.route/Route<dev.kord.common.entity/DiscordGuildScheduledEventException> // dev.kord.rest.route/Route.GuildScheduledEventExceptionPost|null[0]
+
+    final object GuildScheduledEventExceptionUsersGet : dev.kord.rest.route/Route<kotlin.collections/List<dev.kord.rest.json.request/GuildScheduledEventUsersResponse>> // dev.kord.rest.route/Route.GuildScheduledEventExceptionUsersGet|null[0]
+
     final object GuildScheduledEventGet : dev.kord.rest.route/Route<dev.kord.common.entity/DiscordGuildScheduledEvent> // dev.kord.rest.route/Route.GuildScheduledEventGet|null[0]
 
     final object GuildScheduledEventPatch : dev.kord.rest.route/Route<dev.kord.common.entity/DiscordGuildScheduledEvent> // dev.kord.rest.route/Route.GuildScheduledEventPatch|null[0]
@@ -8888,6 +9015,8 @@ sealed class <#A: kotlin/Any?> dev.kord.rest.route/Route { // dev.kord.rest.rout
     final object RemoveUserFromThreadDelete : dev.kord.rest.route/Route<kotlin/Unit> // dev.kord.rest.route/Route.RemoveUserFromThreadDelete|null[0]
 
     final object RoleId : dev.kord.rest.route/Route.Key // dev.kord.rest.route/Route.RoleId|null[0]
+
+    final object ScheduledEventExceptionId : dev.kord.rest.route/Route.Key // dev.kord.rest.route/Route.ScheduledEventExceptionId|null[0]
 
     final object ScheduledEventId : dev.kord.rest.route/Route.Key // dev.kord.rest.route/Route.ScheduledEventId|null[0]
 
@@ -9462,6 +9591,7 @@ final suspend inline fun (dev.kord.rest.service/GuildService).dev.kord.rest.serv
 final suspend inline fun (dev.kord.rest.service/GuildService).dev.kord.rest.service/createMediaChannel(dev.kord.common.entity/Snowflake, kotlin/String, kotlin/Function1<dev.kord.rest.builder.channel/MediaChannelCreateBuilder, kotlin/Unit>): dev.kord.common.entity/DiscordChannel // dev.kord.rest.service/createMediaChannel|createMediaChannel@dev.kord.rest.service.GuildService(dev.kord.common.entity.Snowflake;kotlin.String;kotlin.Function1<dev.kord.rest.builder.channel.MediaChannelCreateBuilder,kotlin.Unit>){}[0]
 final suspend inline fun (dev.kord.rest.service/GuildService).dev.kord.rest.service/createNewsChannel(dev.kord.common.entity/Snowflake, kotlin/String, kotlin/Function1<dev.kord.rest.builder.channel/NewsChannelCreateBuilder, kotlin/Unit>): dev.kord.common.entity/DiscordChannel // dev.kord.rest.service/createNewsChannel|createNewsChannel@dev.kord.rest.service.GuildService(dev.kord.common.entity.Snowflake;kotlin.String;kotlin.Function1<dev.kord.rest.builder.channel.NewsChannelCreateBuilder,kotlin.Unit>){}[0]
 final suspend inline fun (dev.kord.rest.service/GuildService).dev.kord.rest.service/createScheduledEvent(dev.kord.common.entity/Snowflake, kotlin/String, dev.kord.common.entity/GuildScheduledEventPrivacyLevel, kotlin.time/Instant, dev.kord.common.entity/ScheduledEntityType, kotlin/Function1<dev.kord.rest.builder.guild/ScheduledEventCreateBuilder, kotlin/Unit> = ...): dev.kord.common.entity/DiscordGuildScheduledEvent // dev.kord.rest.service/createScheduledEvent|createScheduledEvent@dev.kord.rest.service.GuildService(dev.kord.common.entity.Snowflake;kotlin.String;dev.kord.common.entity.GuildScheduledEventPrivacyLevel;kotlin.time.Instant;dev.kord.common.entity.ScheduledEntityType;kotlin.Function1<dev.kord.rest.builder.guild.ScheduledEventCreateBuilder,kotlin.Unit>){}[0]
+final suspend inline fun (dev.kord.rest.service/GuildService).dev.kord.rest.service/createScheduledEventException(dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake, kotlin.time/Instant, kotlin/Function1<dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionCreateBuilder, kotlin/Unit> = ...): dev.kord.common.entity/DiscordGuildScheduledEventException // dev.kord.rest.service/createScheduledEventException|createScheduledEventException@dev.kord.rest.service.GuildService(dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake;kotlin.time.Instant;kotlin.Function1<dev.kord.rest.builder.scheduled_events.ScheduledEventExceptionCreateBuilder,kotlin.Unit>){}[0]
 final suspend inline fun (dev.kord.rest.service/GuildService).dev.kord.rest.service/createStageChannel(dev.kord.common.entity/Snowflake, kotlin/String, kotlin/Function1<dev.kord.rest.builder.channel/StageChannelCreateBuilder, kotlin/Unit>): dev.kord.common.entity/DiscordChannel // dev.kord.rest.service/createStageChannel|createStageChannel@dev.kord.rest.service.GuildService(dev.kord.common.entity.Snowflake;kotlin.String;kotlin.Function1<dev.kord.rest.builder.channel.StageChannelCreateBuilder,kotlin.Unit>){}[0]
 final suspend inline fun (dev.kord.rest.service/GuildService).dev.kord.rest.service/createTextChannel(dev.kord.common.entity/Snowflake, kotlin/String, kotlin/Function1<dev.kord.rest.builder.channel/TextChannelCreateBuilder, kotlin/Unit>): dev.kord.common.entity/DiscordChannel // dev.kord.rest.service/createTextChannel|createTextChannel@dev.kord.rest.service.GuildService(dev.kord.common.entity.Snowflake;kotlin.String;kotlin.Function1<dev.kord.rest.builder.channel.TextChannelCreateBuilder,kotlin.Unit>){}[0]
 final suspend inline fun (dev.kord.rest.service/GuildService).dev.kord.rest.service/createVoiceChannel(dev.kord.common.entity/Snowflake, kotlin/String, kotlin/Function1<dev.kord.rest.builder.channel/VoiceChannelCreateBuilder, kotlin/Unit>): dev.kord.common.entity/DiscordChannel // dev.kord.rest.service/createVoiceChannel|createVoiceChannel@dev.kord.rest.service.GuildService(dev.kord.common.entity.Snowflake;kotlin.String;kotlin.Function1<dev.kord.rest.builder.channel.VoiceChannelCreateBuilder,kotlin.Unit>){}[0]
@@ -9469,5 +9599,6 @@ final suspend inline fun (dev.kord.rest.service/GuildService).dev.kord.rest.serv
 final suspend inline fun (dev.kord.rest.service/GuildService).dev.kord.rest.service/modifyGuildSoundboardSound(dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake, kotlin/Function1<dev.kord.rest.builder.guild/SoundboardSoundModifyBuilder, kotlin/Unit> = ...): dev.kord.common.entity/DiscordSoundboardSound // dev.kord.rest.service/modifyGuildSoundboardSound|modifyGuildSoundboardSound@dev.kord.rest.service.GuildService(dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake;kotlin.Function1<dev.kord.rest.builder.guild.SoundboardSoundModifyBuilder,kotlin.Unit>){}[0]
 final suspend inline fun (dev.kord.rest.service/GuildService).dev.kord.rest.service/modifyGuildWelcomeScreen(dev.kord.common.entity/Snowflake, kotlin/Function1<dev.kord.rest.builder.guild/WelcomeScreenModifyBuilder, kotlin/Unit>): dev.kord.common.entity/DiscordWelcomeScreen // dev.kord.rest.service/modifyGuildWelcomeScreen|modifyGuildWelcomeScreen@dev.kord.rest.service.GuildService(dev.kord.common.entity.Snowflake;kotlin.Function1<dev.kord.rest.builder.guild.WelcomeScreenModifyBuilder,kotlin.Unit>){}[0]
 final suspend inline fun (dev.kord.rest.service/GuildService).dev.kord.rest.service/modifyScheduledEvent(dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake, kotlin/Function1<dev.kord.rest.builder.scheduled_events/ScheduledEventModifyBuilder, kotlin/Unit>): dev.kord.common.entity/DiscordGuildScheduledEvent // dev.kord.rest.service/modifyScheduledEvent|modifyScheduledEvent@dev.kord.rest.service.GuildService(dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake;kotlin.Function1<dev.kord.rest.builder.scheduled_events.ScheduledEventModifyBuilder,kotlin.Unit>){}[0]
+final suspend inline fun (dev.kord.rest.service/GuildService).dev.kord.rest.service/modifyScheduledEventException(dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake, kotlin/Function1<dev.kord.rest.builder.scheduled_events/ScheduledEventExceptionModifyBuilder, kotlin/Unit>): dev.kord.common.entity/DiscordGuildScheduledEventException // dev.kord.rest.service/modifyScheduledEventException|modifyScheduledEventException@dev.kord.rest.service.GuildService(dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake;kotlin.Function1<dev.kord.rest.builder.scheduled_events.ScheduledEventExceptionModifyBuilder,kotlin.Unit>){}[0]
 final suspend inline fun (dev.kord.rest.service/GuildService).dev.kord.rest.service/modifyVoiceState(dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake, dev.kord.common.entity/Snowflake, kotlin/Function1<dev.kord.rest.builder.guild/VoiceStateModifyBuilder, kotlin/Unit>) // dev.kord.rest.service/modifyVoiceState|modifyVoiceState@dev.kord.rest.service.GuildService(dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake;dev.kord.common.entity.Snowflake;kotlin.Function1<dev.kord.rest.builder.guild.VoiceStateModifyBuilder,kotlin.Unit>){}[0]
 final suspend inline fun <#A: kotlin/Any?> (dev.kord.rest.ratelimit/RequestRateLimiter).dev.kord.rest.ratelimit/consume(dev.kord.rest.request/Request<*, *>, kotlin/Function1<dev.kord.rest.ratelimit/RequestToken, #A>): #A // dev.kord.rest.ratelimit/consume|consume@dev.kord.rest.ratelimit.RequestRateLimiter(dev.kord.rest.request.Request<*,*>;kotlin.Function1<dev.kord.rest.ratelimit.RequestToken,0:0>){0§<kotlin.Any?>}[0]
