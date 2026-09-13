@@ -1,5 +1,6 @@
 package dev.kord.rest.json.request
 
+import dev.kord.common.entity.DiscordRecurrenceRule
 import dev.kord.common.entity.GuildScheduledEventEntityMetadata
 import dev.kord.common.entity.GuildScheduledEventPrivacyLevel
 import dev.kord.common.entity.GuildScheduledEventStatus
@@ -27,6 +28,8 @@ public data class GuildScheduledEventCreateRequest(
     @SerialName("entity_type")
     val entityType: ScheduledEntityType,
     val image: Optional<String> = Optional.Missing(),
+    @SerialName("recurrence_rule")
+    val recurrenceRule: Optional<DiscordRecurrenceRule> = Optional.Missing(),
 )
 
 @Serializable
@@ -47,4 +50,6 @@ public data class ScheduledEventModifyRequest(
     val entityType: Optional<ScheduledEntityType> = Optional.Missing(),
     val status: Optional<GuildScheduledEventStatus> = Optional.Missing(),
     val image: Optional<String> = Optional.Missing(),
+    @SerialName("recurrence_rule")
+    val recurrenceRule: Optional<DiscordRecurrenceRule> = Optional.Missing(),
 )

@@ -59,6 +59,7 @@ import kotlinx.serialization.Serializable
  * @property userCount The number of users subscribed to the scheduled event.
  * @property image The [cover image hash](https://discord.com/developers/docs/reference#image-formatting) of the
  * scheduled event.
+ * @property recurrenceRule The [recurrence rule][DiscordRecurrenceRule] of the scheduled event, if any.
  */
 @Serializable
 public data class DiscordGuildScheduledEvent(
@@ -88,6 +89,8 @@ public data class DiscordGuildScheduledEvent(
     @SerialName("user_count")
     val userCount: OptionalInt = OptionalInt.Missing,
     val image: Optional<String?> = Optional.Missing(),
+    @SerialName("recurrence_rule")
+    val recurrenceRule: DiscordRecurrenceRule? = null,
 )
 
 /**

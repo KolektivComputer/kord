@@ -68,6 +68,11 @@ public class ScheduledEventModifyBuilder : AuditRequestBuilder<ScheduledEventMod
     /** The cover image of the scheduled event. */
     public var image: Image? by ::_image.delegate()
 
+    private var _recurrenceRule: Optional<DiscordRecurrenceRule> = Optional.Missing()
+
+    /** The [recurrence rule][DiscordRecurrenceRule] of the scheduled event. */
+    public var recurrenceRule: DiscordRecurrenceRule? by ::_recurrenceRule.delegate()
+
     override fun toRequest(): ScheduledEventModifyRequest = ScheduledEventModifyRequest(
         channelId = _channelId,
         entityMetadata = _entityMetadata,
@@ -79,5 +84,6 @@ public class ScheduledEventModifyBuilder : AuditRequestBuilder<ScheduledEventMod
         entityType = _entityType,
         status = _status,
         image = _image.map { it.dataUri },
+        recurrenceRule = _recurrenceRule,
     )
 }
