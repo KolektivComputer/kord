@@ -19,6 +19,7 @@ private val Project.tag
 val Project.libraryVersion: Provider<String>
     get() {
         if (System.getProperty("idea.active")?.toBoolean() == true) return provider { "QODANA" }
+        val overrideVersion = providers.gradleProperty("libraryVersionOverride")
         val snapshotVersion = git("branch", "--show-current").map { branch ->
             val snapshotPrefix = when (branch) {
                 "main" -> providers.gradleProperty("nextPlannedVersion").get()
@@ -27,7 +28,7 @@ val Project.libraryVersion: Provider<String>
             "$snapshotPrefix-SNAPSHOT"
         }
 
-        return tag.orElse(snapshotVersion)
+        return overrideVersion.orElse(tag).orElse(snapshotVersion)
     }
 
 val Project.commitHash get() = git("rev-parse", "--verify", "HEAD")
