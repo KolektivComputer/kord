@@ -62,6 +62,20 @@ mavenPublishing {
 
 publishing {
     repositories {
+
+        val ghActor = providers.environmentVariable("GITHUB_ACTOR")
+        val ghToken = providers.environmentVariable("GITHUB_TOKEN")
+        if (ghActor.isPresent && ghToken.isPresent) {
+            maven {
+                name = "GitHubPackages"
+                url = uri("https://maven.pkg.github.com/KolektivComputer/kord")
+                credentials {
+                    username = ghActor.get()
+                    password = ghToken.get()
+                }
+            }
+        }
+
         maven {
             url = uri("https://maven.pkg.github.com/kordlib/kord")
 
