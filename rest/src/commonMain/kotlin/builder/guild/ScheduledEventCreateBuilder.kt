@@ -1,6 +1,7 @@
 package dev.kord.rest.builder.guild
 
 import dev.kord.common.annotation.KordDsl
+import dev.kord.common.entity.DiscordRecurrenceRule
 import dev.kord.common.entity.GuildScheduledEventEntityMetadata
 import dev.kord.common.entity.GuildScheduledEventPrivacyLevel
 import dev.kord.common.entity.ScheduledEntityType
@@ -52,6 +53,11 @@ public class ScheduledEventCreateBuilder(
     /** The cover image of the scheduled event. */
     public var image: Image? by ::_image.delegate()
 
+    private var _recurrenceRule: Optional<DiscordRecurrenceRule> = Optional.Missing()
+
+    /** The [recurrence rule][DiscordRecurrenceRule] of the scheduled event. */
+    public var recurrenceRule: DiscordRecurrenceRule? by ::_recurrenceRule.delegate()
+
     override fun toRequest(): GuildScheduledEventCreateRequest = GuildScheduledEventCreateRequest(
         channelId = _channelId,
         entityMetadata = _entityMetadata,
@@ -62,5 +68,6 @@ public class ScheduledEventCreateBuilder(
         description = _description,
         entityType = entityType,
         image = _image.map { it.dataUri },
+        recurrenceRule = _recurrenceRule,
     )
 }

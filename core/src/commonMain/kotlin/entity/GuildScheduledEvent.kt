@@ -120,6 +120,12 @@ public class GuildScheduledEvent(
     public val image: Asset? get() = imageHash?.let { Asset.guildScheduledEventCover(id, it, kord) }
 
     /**
+     * The [recurrence rule][DiscordRecurrenceRule] of this event, if any.
+     */
+    public val recurrenceRule: DiscordRecurrenceRule?
+        get() = data.recurrenceRule
+
+    /**
      * Requests the [Guild] this event belongs to.
      *
      * @throws [RequestException] if anything went wrong during the request.
