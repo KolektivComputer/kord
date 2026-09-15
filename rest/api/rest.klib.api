@@ -947,6 +947,8 @@ abstract interface dev.kord.rest.ratelimit/RequestToken { // dev.kord.rest.ratel
 abstract interface dev.kord.rest.request/RequestHandler { // dev.kord.rest.request/RequestHandler|null[0]
     abstract val token // dev.kord.rest.request/RequestHandler.token|{}token[0]
         abstract fun <get-token>(): kotlin/String // dev.kord.rest.request/RequestHandler.token.<get-token>|<get-token>(){}[0]
+    open val tokenPrefix // dev.kord.rest.request/RequestHandler.tokenPrefix|{}tokenPrefix[0]
+        open fun <get-tokenPrefix>(): kotlin/String // dev.kord.rest.request/RequestHandler.tokenPrefix.<get-tokenPrefix>|<get-tokenPrefix>(){}[0]
 
     abstract suspend fun <#A1: kotlin/Any, #B1: kotlin/Any?> handle(dev.kord.rest.request/Request<#A1, #B1>): #B1 // dev.kord.rest.request/RequestHandler.handle|handle(dev.kord.rest.request.Request<0:0,0:1>){0§<kotlin.Any>;1§<kotlin.Any?>}[0]
     open suspend fun <#A1: kotlin/Any?> intercept(dev.kord.rest.request/RequestBuilder<#A1>) // dev.kord.rest.request/RequestHandler.intercept|intercept(dev.kord.rest.request.RequestBuilder<0:0>){0§<kotlin.Any?>}[0]
@@ -7975,10 +7977,12 @@ final class dev.kord.rest.request/KtorRequestException : dev.kord.rest.request/R
 }
 
 final class dev.kord.rest.request/KtorRequestHandler : dev.kord.rest.request/RequestHandler { // dev.kord.rest.request/KtorRequestHandler|null[0]
-    constructor <init>(io.ktor.client/HttpClient, dev.kord.rest.ratelimit/RequestRateLimiter = ..., kotlin.time/Clock = ..., kotlinx.serialization.json/Json = ..., kotlin/String) // dev.kord.rest.request/KtorRequestHandler.<init>|<init>(io.ktor.client.HttpClient;dev.kord.rest.ratelimit.RequestRateLimiter;kotlin.time.Clock;kotlinx.serialization.json.Json;kotlin.String){}[0]
+    constructor <init>(io.ktor.client/HttpClient, dev.kord.rest.ratelimit/RequestRateLimiter = ..., kotlin.time/Clock = ..., kotlinx.serialization.json/Json = ..., kotlin/String, kotlin/String = ..., kotlin/String? = ...) // dev.kord.rest.request/KtorRequestHandler.<init>|<init>(io.ktor.client.HttpClient;dev.kord.rest.ratelimit.RequestRateLimiter;kotlin.time.Clock;kotlinx.serialization.json.Json;kotlin.String;kotlin.String;kotlin.String?){}[0]
 
     final val token // dev.kord.rest.request/KtorRequestHandler.token|{}token[0]
         final fun <get-token>(): kotlin/String // dev.kord.rest.request/KtorRequestHandler.token.<get-token>|<get-token>(){}[0]
+    final val tokenPrefix // dev.kord.rest.request/KtorRequestHandler.tokenPrefix|{}tokenPrefix[0]
+        final fun <get-tokenPrefix>(): kotlin/String // dev.kord.rest.request/KtorRequestHandler.tokenPrefix.<get-tokenPrefix>|<get-tokenPrefix>(){}[0]
 
     final suspend fun <#A1: kotlin/Any, #B1: kotlin/Any?> handle(dev.kord.rest.request/Request<#A1, #B1>): #B1 // dev.kord.rest.request/KtorRequestHandler.handle|handle(dev.kord.rest.request.Request<0:0,0:1>){0§<kotlin.Any>;1§<kotlin.Any?>}[0]
 }
@@ -7988,6 +7992,8 @@ final class dev.kord.rest.request/StackTraceRecoveringKtorRequestHandler : dev.k
 
     final val token // dev.kord.rest.request/StackTraceRecoveringKtorRequestHandler.token|{}token[0]
         final fun <get-token>(): kotlin/String // dev.kord.rest.request/StackTraceRecoveringKtorRequestHandler.token.<get-token>|<get-token>(){}[0]
+    final val tokenPrefix // dev.kord.rest.request/StackTraceRecoveringKtorRequestHandler.tokenPrefix|{}tokenPrefix[0]
+        final fun <get-tokenPrefix>(): kotlin/String // dev.kord.rest.request/StackTraceRecoveringKtorRequestHandler.tokenPrefix.<get-tokenPrefix>|<get-tokenPrefix>(){}[0]
 
     final suspend fun <#A1: kotlin/Any, #B1: kotlin/Any?> handle(dev.kord.rest.request/Request<#A1, #B1>): #B1 // dev.kord.rest.request/StackTraceRecoveringKtorRequestHandler.handle|handle(dev.kord.rest.request.Request<0:0,0:1>){0§<kotlin.Any>;1§<kotlin.Any?>}[0]
     final suspend fun <#A1: kotlin/Any?> intercept(dev.kord.rest.request/RequestBuilder<#A1>) // dev.kord.rest.request/StackTraceRecoveringKtorRequestHandler.intercept|intercept(dev.kord.rest.request.RequestBuilder<0:0>){0§<kotlin.Any?>}[0]
@@ -9561,8 +9567,9 @@ final fun (io.ktor.client.statement/HttpResponse).dev.kord.rest.request/channelR
 final fun (io.ktor.client.statement/HttpResponse).dev.kord.rest.request/globalSuspensionPoint(kotlin.time/Clock): kotlin/Long // dev.kord.rest.request/globalSuspensionPoint|globalSuspensionPoint@io.ktor.client.statement.HttpResponse(kotlin.time.Clock){}[0]
 final fun (io.ktor.client.statement/HttpResponse).dev.kord.rest.request/logString(kotlin/String): kotlin/String // dev.kord.rest.request/logString|logString@io.ktor.client.statement.HttpResponse(kotlin.String){}[0]
 final fun <#A: kotlin/Any?> (dev.kord.rest.request/RequestBuilder<#A>).dev.kord.rest.request/auditLogReason(kotlin/String?) // dev.kord.rest.request/auditLogReason|auditLogReason@dev.kord.rest.request.RequestBuilder<0:0>(kotlin.String?){0§<kotlin.Any?>}[0]
-final fun dev.kord.rest.request/KtorRequestHandler(kotlin/String, dev.kord.rest.ratelimit/RequestRateLimiter = ..., kotlin.time/Clock = ..., kotlinx.serialization.json/Json = ...): dev.kord.rest.request/KtorRequestHandler // dev.kord.rest.request/KtorRequestHandler|KtorRequestHandler(kotlin.String;dev.kord.rest.ratelimit.RequestRateLimiter;kotlin.time.Clock;kotlinx.serialization.json.Json){}[0]
+final fun dev.kord.rest.request/KtorRequestHandler(kotlin/String, dev.kord.rest.ratelimit/RequestRateLimiter = ..., kotlin.time/Clock = ..., kotlinx.serialization.json/Json = ..., kotlin/String = ..., kotlin/String? = ...): dev.kord.rest.request/KtorRequestHandler // dev.kord.rest.request/KtorRequestHandler|KtorRequestHandler(kotlin.String;dev.kord.rest.ratelimit.RequestRateLimiter;kotlin.time.Clock;kotlinx.serialization.json.Json;kotlin.String;kotlin.String?){}[0]
 final fun dev.kord.rest.service/RestClient(kotlin/String): dev.kord.rest.service/RestClient // dev.kord.rest.service/RestClient|RestClient(kotlin.String){}[0]
+final fun dev.kord.rest.service/RestClient(kotlin/String, io.ktor.client/HttpClient, kotlin/String? = ..., kotlin/String = ...): dev.kord.rest.service/RestClient // dev.kord.rest.service/RestClient|RestClient(kotlin.String;io.ktor.client.HttpClient;kotlin.String?;kotlin.String){}[0]
 final inline fun (dev.kord.rest.builder.automoderation/AutoModerationRuleBuilder).dev.kord.rest.builder.automoderation/sendAlertMessage(dev.kord.common.entity/Snowflake, kotlin/Function1<dev.kord.rest.builder.automoderation/SendAlertMessageAutoModerationActionBuilder, kotlin/Unit> = ...) // dev.kord.rest.builder.automoderation/sendAlertMessage|sendAlertMessage@dev.kord.rest.builder.automoderation.AutoModerationRuleBuilder(dev.kord.common.entity.Snowflake;kotlin.Function1<dev.kord.rest.builder.automoderation.SendAlertMessageAutoModerationActionBuilder,kotlin.Unit>){}[0]
 final inline fun (dev.kord.rest.builder.automoderation/BlockMessageAutoModerationRuleBuilder).dev.kord.rest.builder.automoderation/blockMessage(kotlin/Function1<dev.kord.rest.builder.automoderation/BlockMessageAutoModerationActionBuilder, kotlin/Unit> = ...) // dev.kord.rest.builder.automoderation/blockMessage|blockMessage@dev.kord.rest.builder.automoderation.BlockMessageAutoModerationRuleBuilder(kotlin.Function1<dev.kord.rest.builder.automoderation.BlockMessageAutoModerationActionBuilder,kotlin.Unit>){}[0]
 final inline fun (dev.kord.rest.builder.automoderation/MemberProfileAutoModerationRuleBuilder).dev.kord.rest.builder.automoderation/blockMemberInteraction(kotlin/Function1<dev.kord.rest.builder.automoderation/BlockMemberInteractionAutoModerationActionBuilder, kotlin/Unit> = ...) // dev.kord.rest.builder.automoderation/blockMemberInteraction|blockMemberInteraction@dev.kord.rest.builder.automoderation.MemberProfileAutoModerationRuleBuilder(kotlin.Function1<dev.kord.rest.builder.automoderation.BlockMemberInteractionAutoModerationActionBuilder,kotlin.Unit>){}[0]

@@ -10,9 +10,16 @@ import io.ktor.http.HttpHeaders.UserAgent
 public interface RequestHandler {
 
     /**
-     * The Discord bot authorization token used on requests.
+     * The Discord authorization token used on requests.
      */
     public val token: String
+
+    /**
+     * The scheme prepended to [token] in the `Authorization` header, `Bot` by default.
+     *
+     * Set this to `Bearer` when [token] is an OAuth2 access token.
+     */
+    public val tokenPrefix: String get() = "Bot"
 
     /**
      * Executes the [request], abiding by the active rate limits and returning the response [R].
@@ -25,7 +32,7 @@ public interface RequestHandler {
         builder.apply {
             unencodedHeader(UserAgent, KordConstants.USER_AGENT)
             if (route.requiresAuthorizationHeader) {
-                unencodedHeader(Authorization, "Bot $token")
+                unencodedHeader(Authorization, "$tokenPrefix $token")
             }
         }
     }

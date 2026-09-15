@@ -28,13 +28,17 @@ internal val jsonDefault = Json {
  * @param client A [HttpClient] configured with the required headers for identification.
  * @param clock A [Clock] to calculate bucket reset times, exposed for testing.
  * @param parser Serializer used to parse payloads.
+ * @param tokenPrefix The scheme prepended to [token] in the `Authorization` header, `Bot` by default.
+ * @param baseUrl The base url to send requests to, or `null` to use the base url of each [Request].
  */
 public class KtorRequestHandler(
     private val client: HttpClient,
     private val requestRateLimiter: RequestRateLimiter = ExclusionRequestRateLimiter(),
     private val clock: Clock = Clock.System,
     private val parser: Json = jsonDefault,
-    override val token: String
+    override val token: String,
+    override val tokenPrefix: String = "Bot",
+    private val baseUrl: String? = null,
 ) : RequestHandler {
     private val logger = KotlinLogging.logger("[R]:[KTOR]:[${requestRateLimiter::class.simpleName}]")
 
@@ -74,7 +78,7 @@ public class KtorRequestHandler(
         headers.appendAll(request.headers)
 
         url {
-            url.takeFrom(request.baseUrl)
+            url.takeFrom(baseUrl ?: request.baseUrl)
             encodedPath += request.path
             parameters.appendAll(request.parameters)
         }
@@ -106,11 +110,13 @@ public fun KtorRequestHandler(
     requestRateLimiter: RequestRateLimiter = ExclusionRequestRateLimiter(),
     clock: Clock = Clock.System,
     parser: Json = jsonDefault,
+    tokenPrefix: String = "Bot",
+    baseUrl: String? = null,
 ): KtorRequestHandler {
     val client = HttpClient(httpEngine()) {
         expectSuccess = false
     }
-    return KtorRequestHandler(client, requestRateLimiter, clock, parser, token)
+    return KtorRequestHandler(client, requestRateLimiter, clock, parser, token, tokenPrefix, baseUrl)
 }
 
 public fun RequestResponse.Companion.from(response: HttpResponse, clock: Clock): RequestResponse {

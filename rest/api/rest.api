@@ -7635,16 +7635,17 @@ public final class dev/kord/rest/request/KtorRequestException : dev/kord/rest/re
 }
 
 public final class dev/kord/rest/request/KtorRequestHandler : dev/kord/rest/request/RequestHandler {
-	public fun <init> (Lio/ktor/client/HttpClient;Ldev/kord/rest/ratelimit/RequestRateLimiter;Lkotlin/time/Clock;Lkotlinx/serialization/json/Json;Ljava/lang/String;)V
-	public synthetic fun <init> (Lio/ktor/client/HttpClient;Ldev/kord/rest/ratelimit/RequestRateLimiter;Lkotlin/time/Clock;Lkotlinx/serialization/json/Json;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun <init> (Lio/ktor/client/HttpClient;Ldev/kord/rest/ratelimit/RequestRateLimiter;Lkotlin/time/Clock;Lkotlinx/serialization/json/Json;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+	public synthetic fun <init> (Lio/ktor/client/HttpClient;Ldev/kord/rest/ratelimit/RequestRateLimiter;Lkotlin/time/Clock;Lkotlinx/serialization/json/Json;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public fun getToken ()Ljava/lang/String;
+	public fun getTokenPrefix ()Ljava/lang/String;
 	public fun handle (Ldev/kord/rest/request/Request;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 	public fun intercept (Ldev/kord/rest/request/RequestBuilder;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 }
 
 public final class dev/kord/rest/request/KtorRequestHandlerKt {
-	public static final fun KtorRequestHandler (Ljava/lang/String;Ldev/kord/rest/ratelimit/RequestRateLimiter;Lkotlin/time/Clock;Lkotlinx/serialization/json/Json;)Ldev/kord/rest/request/KtorRequestHandler;
-	public static synthetic fun KtorRequestHandler$default (Ljava/lang/String;Ldev/kord/rest/ratelimit/RequestRateLimiter;Lkotlin/time/Clock;Lkotlinx/serialization/json/Json;ILjava/lang/Object;)Ldev/kord/rest/request/KtorRequestHandler;
+	public static final fun KtorRequestHandler (Ljava/lang/String;Ldev/kord/rest/ratelimit/RequestRateLimiter;Lkotlin/time/Clock;Lkotlinx/serialization/json/Json;Ljava/lang/String;Ljava/lang/String;)Ldev/kord/rest/request/KtorRequestHandler;
+	public static synthetic fun KtorRequestHandler$default (Ljava/lang/String;Ldev/kord/rest/ratelimit/RequestRateLimiter;Lkotlin/time/Clock;Lkotlinx/serialization/json/Json;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ldev/kord/rest/request/KtorRequestHandler;
 	public static final fun from (Ldev/kord/rest/ratelimit/RequestResponse$Companion;Lio/ktor/client/statement/HttpResponse;Lkotlin/time/Clock;)Ldev/kord/rest/ratelimit/RequestResponse;
 }
 
@@ -7711,11 +7712,13 @@ public final class dev/kord/rest/request/RequestBuilderKt {
 
 public abstract interface class dev/kord/rest/request/RequestHandler {
 	public abstract fun getToken ()Ljava/lang/String;
+	public fun getTokenPrefix ()Ljava/lang/String;
 	public abstract fun handle (Ldev/kord/rest/request/Request;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 	public fun intercept (Ldev/kord/rest/request/RequestBuilder;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 }
 
 public final class dev/kord/rest/request/RequestHandler$DefaultImpls {
+	public static fun getTokenPrefix (Ldev/kord/rest/request/RequestHandler;)Ljava/lang/String;
 	public static fun intercept (Ldev/kord/rest/request/RequestHandler;Ldev/kord/rest/request/RequestBuilder;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 }
 
@@ -7761,6 +7764,7 @@ public abstract class dev/kord/rest/request/RestRequestException : dev/kord/comm
 public final class dev/kord/rest/request/StackTraceRecoveringKtorRequestHandler : dev/kord/rest/request/RequestHandler {
 	public fun <init> (Ldev/kord/rest/request/KtorRequestHandler;)V
 	public fun getToken ()Ljava/lang/String;
+	public fun getTokenPrefix ()Ljava/lang/String;
 	public fun handle (Ldev/kord/rest/request/Request;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 	public fun intercept (Ldev/kord/rest/request/RequestBuilder;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 }
@@ -9199,6 +9203,8 @@ public final class dev/kord/rest/service/RestClient : dev/kord/rest/service/Rest
 
 public final class dev/kord/rest/service/RestClientKt {
 	public static final fun RestClient (Ljava/lang/String;)Ldev/kord/rest/service/RestClient;
+	public static final fun RestClient (Ljava/lang/String;Lio/ktor/client/HttpClient;Ljava/lang/String;Ljava/lang/String;)Ldev/kord/rest/service/RestClient;
+	public static synthetic fun RestClient$default (Ljava/lang/String;Lio/ktor/client/HttpClient;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ldev/kord/rest/service/RestClient;
 }
 
 public abstract class dev/kord/rest/service/RestService {

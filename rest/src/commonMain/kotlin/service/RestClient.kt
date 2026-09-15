@@ -6,6 +6,7 @@ import dev.kord.rest.request.KtorRequestHandler
 import dev.kord.rest.request.RequestBuilder
 import dev.kord.rest.request.RequestHandler
 import dev.kord.rest.route.Route
+import io.ktor.client.HttpClient
 import kotlin.contracts.InvocationKind
 import kotlin.contracts.contract
 
@@ -62,3 +63,26 @@ public fun RestClient(token: String): RestClient {
     val requestHandler = KtorRequestHandler(token)
     return RestClient(requestHandler)
 }
+
+/**
+ * Creates a [RestClient] that uses the given [client] to execute requests against [baseUrl].
+ *
+ * @param token The Discord authorization token used on requests.
+ * @param client The [HttpClient] used to execute requests.
+ * @param baseUrl The base url to send requests to, or `null` to use the default Discord API url.
+ * @param tokenPrefix The scheme prepended to [token] in the `Authorization` header, `Bot` by default.
+ * OAuth2 access tokens should use `Bearer`.
+ */
+public fun RestClient(
+    token: String,
+    client: HttpClient,
+    baseUrl: String? = null,
+    tokenPrefix: String = "Bot",
+): RestClient = RestClient(
+    KtorRequestHandler(
+        client = client,
+        token = token,
+        tokenPrefix = tokenPrefix,
+        baseUrl = baseUrl,
+    )
+)
