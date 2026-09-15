@@ -26,6 +26,7 @@ public data class GuildScheduledEventData(
     val creator: Optional<UserData> = Optional.Missing(),
     val userCount: OptionalInt = OptionalInt.Missing,
     val image: Optional<String?> = Optional.Missing(),
+    val guildScheduledEventExceptions: List<DiscordGuildScheduledEventException> = emptyList(),
 ) {
     public companion object {
         public fun from(event: DiscordGuildScheduledEvent): GuildScheduledEventData = with(event) {
@@ -46,6 +47,7 @@ public data class GuildScheduledEventData(
                 creator = creator.map { UserData.from(it) },
                 userCount = userCount,
                 image = image,
+                guildScheduledEventExceptions = guildScheduledEventExceptions,
             )
         }
     }

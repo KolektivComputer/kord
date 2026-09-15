@@ -89,6 +89,7 @@ public sealed class Route<T>(
     public object InteractionId : Key("{interaction.id}", true)
     public object InteractionToken : Key("{interaction.token}", true)
     public object ScheduledEventId : Key("{event.id}", true)
+    public object ScheduledEventExceptionId : Key("{event_exception.id}", true)
     public object StickerId : Key("{sticker.id}")
     public object AutoModerationRuleId : Key("{auto_moderation_rule.id}")
     @DiscordAPIPreview public object GuildJoinRequestId : Key("{guild_join_request.id}")
@@ -1097,6 +1098,34 @@ public sealed class Route<T>(
             HttpMethod.Post,
             "/guilds/$GuildId/scheduled-events",
             DiscordGuildScheduledEvent.serializer()
+        )
+
+    public object GuildScheduledEventExceptionPost :
+        Route<DiscordGuildScheduledEventException>(
+            HttpMethod.Post,
+            "/guilds/$GuildId/scheduled-events/$ScheduledEventId/exceptions",
+            DiscordGuildScheduledEventException.serializer()
+        )
+
+    public object GuildScheduledEventExceptionPatch :
+        Route<DiscordGuildScheduledEventException>(
+            HttpMethod.Patch,
+            "/guilds/$GuildId/scheduled-events/$ScheduledEventId/exceptions/$ScheduledEventExceptionId",
+            DiscordGuildScheduledEventException.serializer()
+        )
+
+    public object GuildScheduledEventExceptionDelete :
+        Route<Unit>(
+            HttpMethod.Delete,
+            "/guilds/$GuildId/scheduled-events/$ScheduledEventId/exceptions/$ScheduledEventExceptionId",
+            NoStrategy
+        )
+
+    public object GuildScheduledEventExceptionUsersGet :
+        Route<List<GuildScheduledEventUsersResponse>>(
+            HttpMethod.Get,
+            "/guilds/$GuildId/scheduled-events/$ScheduledEventId/$ScheduledEventExceptionId/users",
+            ListSerializer(GuildScheduledEventUsersResponse.serializer()),
         )
 
 

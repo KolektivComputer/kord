@@ -265,6 +265,8 @@ public data class GuildScheduledEventUsersResponse(
     val guildScheduledEventId: Snowflake,
     val user: DiscordUser,
     val member: Optional<DiscordGuildMember> = Optional.Missing(),
+    @SerialName("guild_scheduled_event_exception_id")
+    val guildScheduledEventExceptionId: OptionalSnowflake? = OptionalSnowflake.Missing,
 )
 
 @DiscordAPIPreview

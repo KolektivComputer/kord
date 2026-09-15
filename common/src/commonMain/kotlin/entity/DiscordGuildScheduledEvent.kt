@@ -59,6 +59,7 @@ import kotlinx.serialization.Serializable
  * @property userCount The number of users subscribed to the scheduled event.
  * @property image The [cover image hash](https://discord.com/developers/docs/reference#image-formatting) of the
  * scheduled event.
+ * @property guildScheduledEventExceptions The exceptions to the recurrence rule of the scheduled event, if any.
  */
 @Serializable
 public data class DiscordGuildScheduledEvent(
@@ -88,6 +89,32 @@ public data class DiscordGuildScheduledEvent(
     @SerialName("user_count")
     val userCount: OptionalInt = OptionalInt.Missing,
     val image: Optional<String?> = Optional.Missing(),
+    @SerialName("guild_scheduled_event_exceptions")
+    val guildScheduledEventExceptions: List<DiscordGuildScheduledEventException> = emptyList(),
+)
+
+/**
+ * Representation of a
+ * [Guild Scheduled Event Exception Structure](https://discord.com/developers/docs/resources/guild-scheduled-event#guild-scheduled-event-exception-object-guild-scheduled-event-exception-structure).
+ *
+ * @property eventId The id of the scheduled event this exception belongs to.
+ * @property eventExceptionId The id of this exception.
+ * @property scheduledStartTime The overridden [Instant] in which this occurrence will start, if any.
+ * @property scheduledEndTime The overridden [Instant] in which this occurrence will end, if any.
+ * @property isCanceled Whether this occurrence is canceled.
+ */
+@Serializable
+public data class DiscordGuildScheduledEventException(
+    @SerialName("event_id")
+    val eventId: Snowflake,
+    @SerialName("event_exception_id")
+    val eventExceptionId: Snowflake,
+    @SerialName("scheduled_start_time")
+    val scheduledStartTime: Instant?,
+    @SerialName("scheduled_end_time")
+    val scheduledEndTime: Instant?,
+    @SerialName("is_canceled")
+    val isCanceled: Boolean,
 )
 
 /**
