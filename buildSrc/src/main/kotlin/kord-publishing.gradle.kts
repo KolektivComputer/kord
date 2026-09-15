@@ -69,12 +69,33 @@ mavenPublishing {
 
 publishing {
     repositories {
-        maven {
-            url = uri("https://maven.pkg.github.com/kordlib/kord")
+        val githubActor = providers.environmentVariable("GITHUB_ACTOR")
+        val githubToken = providers.environmentVariable("GITHUB_TOKEN")
+        if (githubActor.isPresent && githubToken.isPresent) {
+            maven {
+                name = "GitHubPackages"
+                url = uri("https://maven.pkg.github.com/KolektivComputer/kord")
 
-            credentials {
-                username = System.getenv("GITHUB_USERNAME")
-                password = System.getenv("GITHUB_TOKEN")
+                credentials {
+                    username = githubActor.get()
+                    password = githubToken.get()
+                }
+            }
+        }
+
+        val yuriUsername = providers.gradleProperty("kord.publishing.yuriCapitalRepoUsername")
+            .orElse(providers.environmentVariable("YURI_CAPITAL_REPO_USERNAME"))
+        val yuriPassword = providers.gradleProperty("kord.publishing.yuriCapitalRepoPassword")
+            .orElse(providers.environmentVariable("YURI_CAPITAL_REPO_PASSWORD"))
+        if (yuriUsername.isPresent && yuriPassword.isPresent) {
+            maven {
+                name = "yuriReleases"
+                url = uri("https://repo.yuri.capital/repository/maven-releases/")
+
+                credentials {
+                    username = yuriUsername.get()
+                    password = yuriPassword.get()
+                }
             }
         }
     }

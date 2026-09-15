@@ -1,0 +1,30 @@
+name: Publish Kord fork to GitHub Packages
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'kalendee-*'
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  publish:
+    name: Publish to GitHub Packages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Set up JDK
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: 21
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+      - name: Publish with Gradle
+        env:
+          GITHUB_ACTOR: ${{ github.actor }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: ./gradlew --no-parallel -x test :bom:publishAllPublicationsToGitHubPackagesRepository :common:publishAllPublicationsToGitHubPackagesRepository :core:publishAllPublicationsToGitHubPackagesRepository :core-voice:publishAllPublicationsToGitHubPackagesRepository :gateway:publishAllPublicationsToGitHubPackagesRepository :ksp-annotations:publishAllPublicationsToGitHubPackagesRepository :rest:publishAllPublicationsToGitHubPackagesRepository :voice:publishAllPublicationsToGitHubPackagesRepository
