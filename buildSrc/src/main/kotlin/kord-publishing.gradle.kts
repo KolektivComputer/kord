@@ -7,11 +7,18 @@ plugins {
     com.vanniktech.maven.publish
 }
 
+// signing is only configured when signing credentials are available, so that publishToMavenLocal works locally
+val hasSigningCredentials = listOf(
+    "signingInMemoryKey",
+    "signing.key",
+    "signing.secretKeyRingFile",
+).any { providers.gradleProperty(it).isPresent }
+
 mavenPublishing {
     coordinates(Library.group, "kord-${project.name}", libraryVersion.get())
 
     publishToMavenCentral(automaticRelease = true)
-    signAllPublications()
+    if (hasSigningCredentials) signAllPublications()
 
     pom {
         name = Library.name
