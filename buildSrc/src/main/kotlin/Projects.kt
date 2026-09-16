@@ -3,7 +3,7 @@ import org.gradle.api.provider.Provider
 
 object Library {
     const val name = "kord"
-    const val group = "dev.kord"
+    const val group = "computer.kolektiv.kord"
     const val description = "Idiomatic Kotlin Wrapper for The Discord API"
     const val projectUrl = "https://github.com/kordlib/kord"
 }

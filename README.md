@@ -1,7 +1,7 @@
 # Kord
 
 [![Discord](https://img.shields.io/discord/556525343595298817.svg?color=&label=Kord&logo=discord&style=for-the-badge)](https://discord.gg/6jcx5ev)
-[![Download](https://img.shields.io/maven-central/v/dev.kord/kord-core.svg?label=Maven%20Central&style=for-the-badge)](https://central.sonatype.com/artifact/dev.kord/kord-core)
+[![Download](https://img.shields.io/maven-central/v/computer.kolektiv.kord/kord-core.svg?label=Maven%20Central&style=for-the-badge)](https://central.sonatype.com/artifact/computer.kolektiv.kord/kord-core)
 [![Github CI status (branch)](https://img.shields.io/github/actions/workflow/status/kordlib/kord/deployment-ci.yml?branch=main&label=CI&style=for-the-badge)]()
 
 Kord is a [coroutine-based](https://kotlinlang.org/docs/reference/coroutines-overview.html), modularized implementation
@@ -61,7 +61,7 @@ e.g: `feature-amazing-thing-SNAPSHOT` for the branch `feature/amazing-thing`
 For Snapshots for the branch `main` replace `{version}` with `{nextPlannedVersion}-SNAPSHOT` (see `nextPlannedVersion`
 in [`gradle.properties`](gradle.properties))
 
-[![Download](https://img.shields.io/maven-central/v/dev.kord/kord-core.svg?label=Maven%20Central&style=for-the-badge)](https://central.sonatype.com/artifact/dev.kord/kord-core)
+[![Download](https://img.shields.io/maven-central/v/computer.kolektiv.kord/kord-core.svg?label=Maven%20Central&style=for-the-badge)](https://central.sonatype.com/artifact/computer.kolektiv.kord/kord-core)
 
 ### Gradle (Kotlin)
 
@@ -72,7 +72,7 @@ repositories {
 }
 
 dependencies {
-    implementation("dev.kord:kord-core:{version}")
+    implementation("computer.kolektiv.kord:kord-core:{version}")
 }
 ```
 
@@ -87,7 +87,7 @@ repositories {
 }
 
 dependencies {
-    implementation("dev.kord:kord-core:{version}")
+    implementation("computer.kolektiv.kord:kord-core:{version}")
 }
 ```
 
@@ -112,7 +112,7 @@ dependencies {
 
 ```xml
 <dependency>
-    <groupId>dev.kord</groupId>
+    <groupId>computer.kolektiv.kord</groupId>
     <artifactId>kord-core-jvm</artifactId>
     <version>{version}</version>
 </dependency>
